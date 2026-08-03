@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<VerticalAlign>Center</VerticalAlign>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ScalingMode>Normal</ScalingMode>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>ChangeHistory</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>ShowInList</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<ShowTitle>false</ShowTitle>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="56">
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<UsualGroup name="Группа5" id="52">
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация5" id="49">
+							<TextColor>#FF0000</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>*- обязательные поля</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>* Обовязкові поля</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="51"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="34">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<LabelDecoration name="Декорация2" id="36">
+							<TextColor>#FF0000</TextColor>
+							<Font height="20" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="38"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="39">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="НомерТелефона" id="7">
+							<DataPath>Объект.НомерТелефона</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Mask>+389999999999</Mask>
+							<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<LabelDecoration name="Декорация3" id="43">
+							<TextColor>#FF0000</TextColor>
+							<Font height="20" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="45"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="41">
+					<Group>AlwaysHorizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="Email" id="13">
+							<DataPath>Объект.Email</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="EmailКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="EmailРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<LabelDecoration name="Декорация4" id="46">
+							<TextColor>#FF0000</TextColor>
+							<Font height="20" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>*</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="48"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Сайт" id="10">
+					<DataPath>Объект.Сайт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СайтКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СайтРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Область" id="16">
+					<DataPath>Объект.Область</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОбластьКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ОбластьРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="StartChoice">ОбластьНачалоВыбора</Event>
+						<Event name="Clearing">ОбластьОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Город" id="19">
+					<DataPath>Объект.Город</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ГородКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="StartChoice">ГородНачалоВыбора</Event>
+						<Event name="Clearing">ГородОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="Комментарий" id="22">
+					<DataPath>Объект.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<UsualGroup name="Группа1" id="25">
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<Button name="ЗакрытьФорму" id="54">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+							<ExtendedTooltip name="ЗакрытьФормуРасширеннаяПодсказка" id="55"/>
+						</Button>
+						<Button name="Закрыть" id="29">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>12</Width>
+							<CommandName>0:3772996b-41f4-4c47-a5a8-ea397db424ae</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.AppearanceCrossIcon</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отмена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відміна</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="30"/>
+						</Button>
+						<LabelDecoration name="Декорация1" id="31">
+							<Width>21</Width>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="33"/>
+						</LabelDecoration>
+						<Button name="ЗаписатьИЗакрыть" id="27">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>14</Width>
+							<Height>2</Height>
+							<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+							<BackColor>#CCFFCC</BackColor>
+							<Font ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<Picture>
+								<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОК</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>ОК</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="28"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РазрешитьЗакрытиеФормы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить закрытие формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗакрытьФорму" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Закрити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Stop</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗакрытьФорму</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="56fdc86c-7398-4c5d-afcd-4292edf76502">
+		<Name>РекОпт</Name>
+		<Code>РекОпт</Code>
+		<Description>РекОпт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bf93d050-0bc6-43c5-b30e-154679bf9609">
+		<Name>РекОптБН</Name>
+		<Code>РекОптБН</Code>
+		<Description>РекОптБН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="08d07fcd-e14f-4b2a-a08c-50b7efa7f4c9">
+		<Name>РекРозница</Name>
+		<Code>РекРозница</Code>
+		<Description>РекРозница</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7ed3361f-803d-4ac6-896d-d723308d2dc5">
+		<Name>РекРозницаБН</Name>
+		<Code>РекРозницаБН</Code>
+		<Description>РекРозницаБН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a765ae0a-c59d-43fb-b501-c147abba9f1d">
+		<Name>СебестоимостьНаша</Name>
+		<Code>Себестоимость наша</Code>
+		<Description>Себестоимость наша</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f2ad92f8-700d-464c-ad06-8ca0549122d6">
+		<Name>ЦенаБН</Name>
+		<Code>ЦенаБН</Code>
+		<Description>Цена БН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="aba429a0-a9ee-4ad9-a3f4-ff756bf38337">
+		<Name>ЦенаОпт</Name>
+		<Code>ЦенаОпт</Code>
+		<Description>Цена опт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="65507c56-28e6-481d-9b7f-5d51a39830cb">
+		<Name>ЦенаРекомендованая</Name>
+		<Code>ЦенаРекомендованая</Code>
+		<Description>Цена рекомендованая</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="658ec357-79c0-47c2-b07b-c01ae23ca6ab">
+		<Name>ЦенаСоСкидкой</Name>
+		<Code>ЦенаСоСкидкой</Code>
+		<Description>Цена со скидкой</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="848081b0-a4d5-4ab6-8884-dc451172a330">
+		<Name>ЦенаХотлайнКонкурентыМаксимальная</Name>
+		<Code>ЦенаХотлайнКонкурентыМаксимальная</Code>
+		<Description>ЦенаХотлайнКонкурентыМаксимальная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6ef1327e-6d92-4446-9baf-8abb4377567c">
+		<Name>ЦенаХотлайнКонкурентыМинимальная</Name>
+		<Code>ЦенаХотлайнКонкурентыМинимальная</Code>
+		<Description>ЦенаХотлайнКонкурентыМинимальная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b3708094-47be-40ee-83ba-a7f7d4d1518b">
+		<Name>ЦенаХотлайнКонкурентыСредняя</Name>
+		<Code>ЦенаХотлайнКонкурентыСредняя</Code>
+		<Description>ЦенаХотлайнКонкурентыСредняя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="559b8674-e818-4316-b6f3-0cba1dd23a10">
+		<Name>ЦенаХотлайнМаксимальная</Name>
+		<Code>ЦенаХотлайнМаксимальная</Code>
+		<Description>ЦенаХотлайнМаксимальная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="03371006-ec01-4f6c-907d-307153c3cf08">
+		<Name>ЦенаХотлайнМинимальная</Name>
+		<Code>ЦенаХотлайнМинимальная</Code>
+		<Description>ЦенаХотлайнМинимальная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9f3feb23-acb1-4829-9c3b-94494e1b0464">
+		<Name>ЦенаХотлайнСредняя</Name>
+		<Code>ЦенаХотлайнСредняя</Code>
+		<Description>ЦенаХотлайнСредняя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

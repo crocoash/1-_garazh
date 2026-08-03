@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="02fcbb7d-a38e-4bca-97e1-23ea03e6e057">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыВыполненияАккредитива" category="Ref">
+				<xr:TypeId>56171010-3c53-4afc-8678-2907c0db7a53</xr:TypeId>
+				<xr:ValueId>893a906c-13db-44ac-a32f-581ba08d6e92</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыВыполненияАккредитива" category="Manager">
+				<xr:TypeId>71103d6f-03b0-44ee-9f26-1d0d4a0202dc</xr:TypeId>
+				<xr:ValueId>5c6e94ff-7e1d-4091-a2d2-45d6912be39c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыВыполненияАккредитива" category="List">
+				<xr:TypeId>335ffa13-8377-4dd8-811a-1b89c7db7f6b</xr:TypeId>
+				<xr:ValueId>7bb669e2-b41e-4ecb-92e1-264b6dcc8bb4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыВыполненияАккредитива</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы выполнения аккредитива</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>СпособыВыполненияАккредитива</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>QuickChoice</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="cd4c3fcd-d3bf-4df3-92bf-f5a2c4896fdb">
+				<Properties>
+					<Name>ЗаСчетДепозита</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аккредитив в исполняющем банке исполнить за счет средств плательщика, депонированных в исполняющем банке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Аккредитив в исполняющем банке исполнить за счет средств плательщика, депонированных в исполняющем банке</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0889ed4a-c89b-4ac5-920a-03e3fede4466">
+				<Properties>
+					<Name>ИнкассациейДокументов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инкассацией документов в банк-эмитент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Инкассацией документов в банк-эмитент</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7dad2748-9751-48f5-9280-45a7a0b5bd51">
+				<Properties>
+					<Name>ЧерезКоррСчет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Через корреспондирующий счет банка-эмитента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Через корреспондирующий счет банка-эмитента</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

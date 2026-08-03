@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="097e344b-42fd-46e9-8186-974eb44cea07">
+		<Name>ВПути</Name>
+		<Code>000000021</Code>
+		<Description>В пути</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="165eb5c8-ad4d-423a-885c-712cf7239ba9">
+		<Name>ВЭкспедиторке</Name>
+		<Code>000000002</Code>
+		<Description>В экспедиторке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7011f259-3ea5-4306-8c69-3f0dd75c8a5c">
+		<Name>Создан</Name>
+		<Code>000000001</Code>
+		<Description>Создан</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="91d75455-2fb1-4abe-8482-6a0522fb8f3d">
+		<Name>СозданПредзаказ</Name>
+		<Code>000000020</Code>
+		<Description>Создан</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

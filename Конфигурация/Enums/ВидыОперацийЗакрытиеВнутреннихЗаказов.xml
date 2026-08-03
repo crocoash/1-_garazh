@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="84d1bdd4-3477-4603-bb02-b093de5c0945">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийЗакрытиеВнутреннихЗаказов" category="Ref">
+				<xr:TypeId>552503a2-7411-47b6-b6e4-642891d90ca0</xr:TypeId>
+				<xr:ValueId>f72eef60-d0d5-49fe-8521-80d1955d6782</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийЗакрытиеВнутреннихЗаказов" category="Manager">
+				<xr:TypeId>340f6d12-ef94-4bc5-946f-8c5fa737d0bb</xr:TypeId>
+				<xr:ValueId>41ce9c1a-4621-426d-9659-ad768c2d3239</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийЗакрытиеВнутреннихЗаказов" category="List">
+				<xr:TypeId>47da4358-6ce8-4060-a03c-3229e333f9f3</xr:TypeId>
+				<xr:ValueId>a27e9f91-b9e2-43e8-9cca-7b513adbf546</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыОперацийЗакрытиеВнутреннихЗаказов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды операций документа "Закрытие внутренних заказов"</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Общ)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="3f6cefcf-85eb-4347-a2c2-b80199fea2f5">
+				<Properties>
+					<Name>ЗакрытиеЗаказов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>закрытие внутренних заказов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1ee4a59a-9360-4fe3-8747-40f59775b124">
+				<Properties>
+					<Name>СнятиеРезервов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>снятие резервов и размещения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AccumulationRegister uuid="b098a7e6-6ec5-45aa-a8f5-ae77f275eebb">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="Record">
+				<xr:TypeId>10b1d93e-751a-43e1-aeac-d607c374f4f4</xr:TypeId>
+				<xr:ValueId>7357177c-bf02-426f-a5a5-744ceba72ea2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="Manager">
+				<xr:TypeId>fab4a294-caaa-4a68-a601-fcc06d0842c2</xr:TypeId>
+				<xr:ValueId>57df486a-f562-4bb5-8487-11c43af58d97</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="Selection">
+				<xr:TypeId>a836e872-8db9-4be7-96d6-2551566b266c</xr:TypeId>
+				<xr:ValueId>0a4f7406-e8e9-417c-bd70-746130a55703</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="List">
+				<xr:TypeId>2c1bcd2c-3bdc-456f-a2ea-56bd84a3ee52</xr:TypeId>
+				<xr:ValueId>451cb557-c471-4e50-98db-88a2b08b4823</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="RecordSet">
+				<xr:TypeId>0a2c8486-acff-4603-8b70-20ed4351e58c</xr:TypeId>
+				<xr:ValueId>a4ffb659-a35e-4824-b2ec-36d2913569ef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов" category="RecordKey">
+				<xr:TypeId>8daa39c8-093b-4ade-b7c9-3ce282608a4d</xr:TypeId>
+				<xr:ValueId>ed2b66ca-11a3-4d8c-84af-ebae20db8c65</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВзаиморасчетыСКонтрагентамиПоДокументамРасчетов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Взаиморасчеты с контрагентами по документам расчетов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Общ) Оперативное ведение расчетов с контрагентами по договорам с учетом расчетов по документам</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultListForm/>
+			<AuxiliaryListForm/>
+			<RegisterType>Balance</RegisterType>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<EnableTotalsSplitting>true</EnableTotalsSplitting>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="a42a8f86-c924-48e4-a474-8ca4a4a311f1">
+				<Properties>
+					<Name>СуммаВзаиморасчетов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма Взаиморасчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Сумма в валюте взаиморасчетов</Comment>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Dimension uuid="4974fd24-137e-456d-ab40-d87e86d7d0df">
+				<Properties>
+					<Name>ДоговорКонтрагента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор контрагента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>Index</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="e5108320-0d38-45f7-83b9-ae2e3387cb63">
+				<Properties>
+					<Name>Сделка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сделка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетНаОплатуПокупателю</v8:Type>
+						<v8:Type>cfg:DocumentRef.СчетНаОплатуПоставщика</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="aedde9de-56cd-4f17-b084-abfd4878e695">
+				<Properties>
+					<Name>ДокументРасчетовСКонтрагентом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ расчетов с контрагентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Незакрытый документ поставки/оплаты</Comment>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ВозвратТоваровОтПокупателя</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеПоручениеИсходящее</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеТребованиеПолученное</v8:Type>
+						<v8:Type>cfg:DocumentRef.РасходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentRef.АккредитивПереданный</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровУслугВНТТ</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеТребованиеПоручениеПолученное</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеТребованиеПоручениеВыставленное</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтчетКомитентуОПродажах</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежныйОрдерСписаниеДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаДолгаПоВозвратнойТаре</v8:Type>
+						<v8:Type>cfg:DocumentRef.АккредитивПолученный</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеДопРасходов</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеПоручениеВходящее</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежноеТребованиеВыставленное</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПлатежныйОрдерПоступлениеДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОплатаОтПокупателяПлатежнойКартой</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтчетКомиссионераОПродажах</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщикуИзНТТ</v8:Type>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.АвансовыйОтчет</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаДолга</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="38a43c69-06e7-440b-aab4-880fdc04b886">
+				<Properties>
+					<Name>ВидРасчетовСКонтрагентом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид расчетов с контрагентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Вид расчетов (по приобретению, по реализации, прочее)</Comment>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыРасчетовСКонтрагентами</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="83ef87e5-d53e-4560-ba7d-a3d45f3dda60">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="5170d3f0-ad15-4957-a01d-074bdaf64af8">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<UseInTotals>true</UseInTotals>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

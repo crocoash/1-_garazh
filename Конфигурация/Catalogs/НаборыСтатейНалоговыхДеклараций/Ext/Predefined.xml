@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="8433ff4a-99ec-4bc3-becd-9b5e06f726a2">
+		<Name>ДекларацияПоНДС</Name>
+		<Code>000006</Code>
+		<Description>Декларация по НДС</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="d4b1b6ba-6330-40ee-bb62-154febd13faa">
+				<Name>ДекларацияПоНДС_НалоговыеОбязательства</Name>
+				<Code>000008</Code>
+				<Description>Налоговые обязательства</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a27dd756-7e96-4650-8200-4dba0228fa36">
+				<Name>ДекларацияПоНДС_НалоговыйКредит</Name>
+				<Code>000007</Code>
+				<Description>Налоговый кредит</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c34f06f8-e35c-4c05-b14a-975cb05fb7fc">
+				<Name>ДекларацияПоНДС_НалоговыйКредит_Импорт</Name>
+				<Code>000009</Code>
+				<Description>Налоговый кредит</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9142afa7-683a-4dda-9aee-01d3f170384c">
+		<Name>ЕдиныйНалог</Name>
+		<Code>000001</Code>
+		<Description>Единый налог</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="c25843d3-bc41-469a-9983-565cc84788c1">
+				<Name>ЕдиныйНалогПриход</Name>
+				<Code>000002</Code>
+				<Description>Единый налог: приход денег</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5a191422-32e5-46fa-b301-fe76088f6aa7">
+				<Name>ЕдиныйНалогРасход</Name>
+				<Code>000003</Code>
+				<Description>Единый налог: расход денег</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

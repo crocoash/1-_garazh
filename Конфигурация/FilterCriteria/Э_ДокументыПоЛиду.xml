@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<FilterCriterion uuid="03f13425-a194-4573-be78-16a2c6bb513a">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.Э_ДокументыПоЛиду" category="Manager">
+				<xr:TypeId>ff8731c6-90f2-4fd7-87ef-e0c128348dde</xr:TypeId>
+				<xr:ValueId>1942e561-edf2-4a32-8349-cfb6494c2093</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.Э_ДокументыПоЛиду" category="List">
+				<xr:TypeId>1276fff7-a31c-4bdb-b92c-1c8a35b39a92</xr:TypeId>
+				<xr:ValueId>dab802e3-ce2f-44d4-a172-ed78eefb4d0d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Э_ДокументыПоЛиду</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по лиду</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документи по ліду</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Э_Лиды</v8:Type>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.Э_Лид</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

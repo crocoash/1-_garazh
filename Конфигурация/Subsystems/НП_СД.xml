@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="8eaac3c7-5bf9-4f9a-8cbd-e4cb70af5674">
+		<Properties>
+			<Name>НП_СД</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НП</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодульНовойПошты_СД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Статусы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваровОтПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйКассовыйОрдер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДействийДляСтатусаНП_СД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаОбменаНоваяПошта_СД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Регионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Города</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Улицы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТипыОтделений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Отделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Почтоматы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ФормыСобственности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТипыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТипыПлательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_СпособыОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ВидыГруза</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТехнологияДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ВидыОбратнойДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ОписаниеГруза</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ВременныеИнтервалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ВидыПалет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ПлательщикОбратнойДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТипыШинИДисков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_Ошибки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_ТипыПоддонов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_КонтрагентыПолучатели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_КонтактныеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_АдресаКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_КонтрагентыОтправители</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НП_КонтрагентыТретьеЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НП_ВыборАдреса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаHTTP_СД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НП_НастройкиРоботыСНовойПоштой</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

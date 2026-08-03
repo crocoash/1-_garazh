@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Report uuid="5efc3080-de1b-406e-ae8f-049a44fdd52a">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница" category="Object">
+				<xr:TypeId>36799a81-c42f-4cb0-b486-d35693250db9</xr:TypeId>
+				<xr:ValueId>a948102c-ad2f-485f-8442-79568b4d42b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница" category="Manager">
+				<xr:TypeId>b01b8b44-c8f7-4fa4-af0b-50191e2d252d</xr:TypeId>
+				<xr:ValueId>ad7edf0c-7cee-45d2-8dcf-fd5b58397c42</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет о суммах выписанных налоговых документов по дням (розница)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очікуваний та підтверджений ПДВ продажів по днях (роздріб)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>Report.ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница.Form.ФормаОтчета</DefaultForm>
+			<AuxiliaryForm>Report.ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница.Form.ФормаОтчета</AuxiliaryForm>
+			<MainDataCompositionSchema>Report.ОтчетОСуммахВыписанныхНалоговыхДокументовПоДнямРозница.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаОтчета</Form>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

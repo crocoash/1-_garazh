@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="66f9142f-fd7f-426a-8ebb-4992f02e1c82">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыРасчетаЦены" category="Ref">
+				<xr:TypeId>cd8cde14-6bef-4068-8bad-1e6c152f7e79</xr:TypeId>
+				<xr:ValueId>2c3a0eca-9d35-4adc-b0b1-4e567273a3f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыРасчетаЦены" category="Manager">
+				<xr:TypeId>cc9660b6-9f54-4bf0-afd2-9e09d1ef7e74</xr:TypeId>
+				<xr:ValueId>fb27657c-7c73-49bb-b040-2664bf7e01a5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыРасчетаЦены" category="List">
+				<xr:TypeId>d4b4e6fe-a7a8-4f88-b8e8-188e1d8b4096</xr:TypeId>
+				<xr:ValueId>76e32923-a8dc-4382-9bbe-89f7875842f4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыРасчетаЦены</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы расчета цены</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Упр)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="494ff18e-db44-49c3-a9e1-f4826c602359">
+				<Properties>
+					<Name>ПоПроцентнойНаценкеНаБазовыйТип</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По процентной наценке на базовый тип</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d503bc4d-fca5-4ff4-a010-3e34d3bb4bb0">
+				<Properties>
+					<Name>ПоВхождениюБазовойЦеныВДиапазон</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По вхождению базовой цены в диапазон</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
