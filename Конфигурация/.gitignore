@@ -3,7 +3,7 @@
 /_tools/*
 !/_tools/check-barcodes.ps1
 !/_tools/fix-barcodes.ps1
-!/_tools/barcode-object.xml
+!/_tools/barcode-object.txt
 !/_tools/snapshot.ps1
 !/_tools/ШтрихкодыВМакетах.md
 

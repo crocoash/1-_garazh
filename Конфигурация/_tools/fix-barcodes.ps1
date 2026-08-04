@@ -4,7 +4,7 @@
 # <object> для рисунков типа "Объект" — рисунок в Template.xml остаётся, объект
 # пропадает. Обратная загрузка такого файла сносит штрихкод и в базе.
 #
-# Скрипт дописывает эталонный объект (V8.Barcod.2 из _tools\barcode-object.xml)
+# Скрипт дописывает эталонный объект (V8.Barcod.2 из _tools\barcode-object.txt)
 # во все рисунки типа "Объект", у которых блоб потерялся.
 #
 # Запускать ПОСЛЕ каждой выгрузки конфигурации в файлы, ДО загрузки обратно:
@@ -24,7 +24,7 @@ param(
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 
-$эталонФайл = Join-Path $PSScriptRoot "barcode-object.xml"
+$эталонФайл = Join-Path $PSScriptRoot "barcode-object.txt"
 if (-not (Test-Path $эталонФайл)) {
     Write-Host "Нет эталона $эталонФайл — восстанавливать нечем." -ForegroundColor Red
     exit 1
