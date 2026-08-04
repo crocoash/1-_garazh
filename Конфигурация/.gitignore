@@ -1,2 +1,11 @@
-/_tools/
+# Инструменты. Тяжёлое (portable git, BSL Language Server) в репозиторий не тащим,
+# но скрипты штрихкодов и снимков должны уезжать вместе с конфигурацией на машину с 1С.
+/_tools/*
+!/_tools/check-barcodes.ps1
+!/_tools/fix-barcodes.ps1
+!/_tools/barcode-object.xml
+!/_tools/snapshot.ps1
+!/_tools/ШтрихкодыВМакетах.md
+
+# Служебные файлы Claude Code
 /.claude/
