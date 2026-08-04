@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="3cbafa5a-395f-4d31-8b7e-3726b5f2c5de">
+		<Name>ЗаказПокупателя</Name>
+		<Code>00000000000000000000000000000000000000000000000001</Code>
+		<Description>Заказ покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="315a8a53-9543-446a-9b16-6429f82b8ff4">
+		<Name>РеализацияТоваровУслуг</Name>
+		<Code>00000000000000000000000000000000000000000000000002</Code>
+		<Description>Реализация товаров услуг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

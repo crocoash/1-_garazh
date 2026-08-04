@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="b6e978e6-6cb9-47c8-93ac-a404406cf995">
+		<Name>Хорошоп</Name>
+		<Code>000000001</Code>
+		<Description>Хорошоп</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d99033bf-cda1-40e1-9aef-83624eee1574">
+		<Name>ХорошопFTP</Name>
+		<Code>000000002</Code>
+		<Description>Хорошоп FTP</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

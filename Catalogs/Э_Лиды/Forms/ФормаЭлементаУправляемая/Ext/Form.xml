@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКнопкаСоздатьПартнера" id="88">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаЭ_СоздатьПартнера</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать контрагента</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Створити контрагента</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКнопкаСоздатьПартнераExtendedTooltip" id="198"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименование" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група найменування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група найменування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаНаименованиеExtendedTooltip" id="199"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>62</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Wrap>false</Wrap>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="200"/>
+				</InputField>
+				<InputField name="Родитель" id="102">
+					<DataPath>Объект.Parent</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<ContextMenu name="РодительКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="РодительExtendedTooltip" id="201"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="24">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Додаткові реквізити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="202"/>
+			<ChildItems>
+				<InputField name="Контрагент" id="82">
+					<DataPath>Объект.Контрагент</DataPath>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="КонтрагентExtendedTooltip" id="203"/>
+					<Events>
+						<Event name="OnChange">ПартнерПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="Закрыт" id="85">
+					<DataPath>Объект.Закрыт</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗакрытКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ЗакрытExtendedTooltip" id="204"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група сторінки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="205"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ГруппаРеквизиты" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реквізити</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа реквизиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група реквізити</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРеквизитыExtendedTooltip" id="206"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="92">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1ExtendedTooltip" id="207"/>
+							<ChildItems>
+								<InputField name="НомерТелефона" id="5">
+									<DataPath>Объект.НомерТелефона</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>45</Width>
+									<Wrap>false</Wrap>
+									<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="НомерТелефонаExtendedTooltip" id="208"/>
+									<Events>
+										<Event name="OnChange">НомерТелефонаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="КонтактноеЛицо" id="47">
+									<DataPath>Объект.КонтактноеЛицо</DataPath>
+									<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="КонтактноеЛицоExtendedTooltip" id="209"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="94">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="210"/>
+							<ChildItems>
+								<CheckBoxField name="EMAIL" id="41">
+									<DataPath>Объект.EMAIL</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="EMAILКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="EMAILExtendedTooltip" id="211"/>
+								</CheckBoxField>
+								<InputField name="IP_Адрес" id="79">
+									<DataPath>Объект.IP_Адрес</DataPath>
+									<ContextMenu name="IP_АдресКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="IP_АдресExtendedTooltip" id="212"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Адрес" id="96">
+							<DataPath>Объект.Адрес</DataPath>
+							<ContextMenu name="АдресКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="АдресExtendedTooltip" id="213"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСобытия" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>События</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Події</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа события</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група події</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСобытияExtendedTooltip" id="214"/>
+					<ChildItems>
+						<Table name="Э_СписокСобытийПоЛиду" id="105">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Э_СписокСобытийПоЛиду</DataPath>
+							<RowPictureDataPath>Э_СписокСобытийПоЛиду.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="Э_СписокСобытийПоЛидуКонтекстноеМеню" id="106"/>
+							<AutoCommandBar name="Э_СписокСобытийПоЛидуКоманднаяПанель" id="107"/>
+							<ExtendedTooltip name="Э_СписокСобытийПоЛидуExtendedTooltip" id="215"/>
+							<SearchStringAddition name="Э_СписокСобытийПоЛидуСтрокаПоиска" id="266">
+								<AdditionSource>
+									<Item>Э_СписокСобытийПоЛиду</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Э_СписокСобытийПоЛидуСтрокаПоискаКонтекстноеМеню" id="267"/>
+								<ExtendedTooltip name="Э_СписокСобытийПоЛидуСтрокаПоискаРасширеннаяПодсказка" id="268"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="Э_СписокСобытийПоЛидуСостояниеПросмотра" id="269">
+								<AdditionSource>
+									<Item>Э_СписокСобытийПоЛиду</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="Э_СписокСобытийПоЛидуСостояниеПросмотраКонтекстноеМеню" id="270"/>
+								<ExtendedTooltip name="Э_СписокСобытийПоЛидуСостояниеПросмотраРасширеннаяПодсказка" id="271"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="Э_СписокСобытийПоЛидуУправлениеПоиском" id="272">
+								<AdditionSource>
+									<Item>Э_СписокСобытийПоЛиду</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="Э_СписокСобытийПоЛидуУправлениеПоискомКонтекстноеМеню" id="273"/>
+								<ExtendedTooltip name="Э_СписокСобытийПоЛидуУправлениеПоискомРасширеннаяПодсказка" id="274"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Э_СписокСобытийПоЛидуНомер" id="114">
+									<DataPath>~Э_СписокСобытийПоЛиду.Number</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуНомерКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуНомерExtendedTooltip" id="216"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуДата" id="136">
+									<DataPath>~Э_СписокСобытийПоЛиду.Дата</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуДатаКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуДатаExtendedTooltip" id="217"/>
+								</LabelField>
+								<CheckBoxField name="Э_СписокСобытийПоЛидуВажное" id="122">
+									<DataPath>~Э_СписокСобытийПоЛиду.Важное</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Э_СписокСобытийПоЛидуВажноеКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуВажноеExtendedTooltip" id="218"/>
+								</CheckBoxField>
+								<CheckBoxField name="Э_СписокСобытийПоЛидувПервойПоловинеДня" id="130">
+									<DataPath>~Э_СписокСобытийПоЛиду.вПервойПоловинеДня</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Э_СписокСобытийПоЛидувПервойПоловинеДняКонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидувПервойПоловинеДняExtendedTooltip" id="219"/>
+								</CheckBoxField>
+								<LabelField name="Э_СписокСобытийПоЛидуВидСобытия" id="128">
+									<DataPath>~Э_СписокСобытийПоЛиду.ВидСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуВидСобытияКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуВидСобытияExtendedTooltip" id="220"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуКонтрагент" id="148">
+									<DataPath>~Э_СписокСобытийПоЛиду.Контрагент</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуКонтрагентКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуКонтрагентExtendedTooltip" id="221"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуКонтактноеЛицо" id="144">
+									<DataPath>~Э_СписокСобытийПоЛиду.КонтактноеЛицо</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуКонтактноеЛицоКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуКонтактноеЛицоExtendedTooltip" id="222"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуШкола" id="188">
+									<DataPath>~Э_СписокСобытийПоЛиду.Школа</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуШколаКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуШколаExtendedTooltip" id="223"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуРайон" id="172">
+									<DataPath>~Э_СписокСобытийПоЛиду.Район</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуРайонКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуРайонExtendedTooltip" id="224"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуШколаАдрес" id="190">
+									<DataPath>~Э_СписокСобытийПоЛиду.ШколаАдрес</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуШколаАдресКонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуШколаАдресExtendedTooltip" id="225"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуРезультатКонтакта" id="176">
+									<DataPath>~Э_СписокСобытийПоЛиду.РезультатКонтакта</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуРезультатКонтактаКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуРезультатКонтактаExtendedTooltip" id="226"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуСодержаниеСобытия" id="178">
+									<DataPath>~Э_СписокСобытийПоЛиду.СодержаниеСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуСодержаниеСобытияКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуСодержаниеСобытияExtendedTooltip" id="227"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуПродукт" id="168">
+									<DataPath>~Э_СписокСобытийПоЛиду.Продукт</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПродуктКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПродуктExtendedTooltip" id="228"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОтветственный" id="162">
+									<DataPath>~Э_СписокСобытийПоЛиду.Ответственный</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОтветственныйКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОтветственныйExtendedTooltip" id="229"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуГород" id="132">
+									<DataPath>~Э_СписокСобытийПоЛиду.Город</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуГородКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуГородExtendedTooltip" id="230"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуКомментарий" id="142">
+									<DataPath>~Э_СписокСобытийПоЛиду.Комментарий</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуКомментарийКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуКомментарийExtendedTooltip" id="231"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуГруппаСобытия" id="134">
+									<DataPath>~Э_СписокСобытийПоЛиду.ГруппаСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуГруппаСобытияКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуГруппаСобытияExtendedTooltip" id="232"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуCRM_Трудозатраты" id="108">
+									<DataPath>~Э_СписокСобытийПоЛиду.CRM_Трудозатраты</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуCRM_ТрудозатратыКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуCRM_ТрудозатратыExtendedTooltip" id="233"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуВерсияДанных" id="110">
+									<DataPath>~Э_СписокСобытийПоЛиду.DataVersion</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуВерсияДанныхКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуВерсияДанныхExtendedTooltip" id="234"/>
+								</LabelField>
+								<CheckBoxField name="Э_СписокСобытийПоЛидуПометкаУдаления" id="112">
+									<DataPath>~Э_СписокСобытийПоЛиду.DeletionMark</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПометкаУдаленияКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПометкаУдаленияExtendedTooltip" id="235"/>
+								</CheckBoxField>
+								<CheckBoxField name="Э_СписокСобытийПоЛидуПроведен" id="116">
+									<DataPath>~Э_СписокСобытийПоЛиду.Posted</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПроведенКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПроведенExtendedTooltip" id="236"/>
+								</CheckBoxField>
+								<LabelField name="Э_СписокСобытийПоЛидуСсылка" id="118">
+									<DataPath>~Э_СписокСобытийПоЛиду.Ref</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуСсылкаКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуСсылкаExtendedTooltip" id="237"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуАдресЭлектроннойПочты" id="120">
+									<DataPath>~Э_СписокСобытийПоЛиду.АдресЭлектроннойПочты</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуАдресЭлектроннойПочтыКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуАдресЭлектроннойПочтыExtendedTooltip" id="238"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуВажность" id="124">
+									<DataPath>~Э_СписокСобытийПоЛиду.Важность</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуВажностьКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуВажностьExtendedTooltip" id="239"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуВидОбъекта" id="126">
+									<DataPath>~Э_СписокСобытийПоЛиду.ВидОбъекта</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуВидОбъектаКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуВидОбъектаExtendedTooltip" id="240"/>
+								</LabelField>
+								<CheckBoxField name="Э_СписокСобытийПоЛидуЕстьВложения" id="138">
+									<DataPath>~Э_СписокСобытийПоЛиду.ЕстьВложения</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Э_СписокСобытийПоЛидуЕстьВложенияКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуЕстьВложенияExtendedTooltip" id="241"/>
+								</CheckBoxField>
+								<LabelField name="Э_СписокСобытийПоЛидуИсточникИнформацииПриОбращении" id="140">
+									<DataPath>~Э_СписокСобытийПоЛиду.ИсточникИнформацииПриОбращении</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуИсточникИнформацииПриОбращенииКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуИсточникИнформацииПриОбращенииExtendedTooltip" id="242"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуКонтактноеЛицоБезКонтрагента" id="146">
+									<DataPath>~Э_СписокСобытийПоЛиду.КонтактноеЛицоБезКонтрагента</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуКонтактноеЛицоБезКонтрагентаКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуКонтактноеЛицоБезКонтрагентаExtendedTooltip" id="243"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуНачалоСобытия" id="150">
+									<DataPath>~Э_СписокСобытийПоЛиду.НачалоСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуНачалоСобытияКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуНачалоСобытияExtendedTooltip" id="244"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОбласть" id="152">
+									<DataPath>~Э_СписокСобытийПоЛиду.Область</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОбластьКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОбластьExtendedTooltip" id="245"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОкончаниеСобытия" id="154">
+									<DataPath>~Э_СписокСобытийПоЛиду.ОкончаниеСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОкончаниеСобытияКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОкончаниеСобытияExtendedTooltip" id="246"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОписаниеСобытия" id="156">
+									<DataPath>~Э_СписокСобытийПоЛиду.ОписаниеСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОписаниеСобытияКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОписаниеСобытияExtendedTooltip" id="247"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОснование" id="158">
+									<DataPath>~Э_СписокСобытийПоЛиду.Основание</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОснованиеКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОснованиеExtendedTooltip" id="248"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуОсновнойВидДеятельности" id="160">
+									<DataPath>~Э_СписокСобытийПоЛиду.ОсновнойВидДеятельности</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуОсновнойВидДеятельностиКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуОсновнойВидДеятельностиExtendedTooltip" id="249"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуПомещение" id="164">
+									<DataPath>~Э_СписокСобытийПоЛиду.Помещение</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПомещениеКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПомещениеExtendedTooltip" id="250"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуПредметКонтакта" id="166">
+									<DataPath>~Э_СписокСобытийПоЛиду.ПредметКонтакта</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПредметКонтактаКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПредметКонтактаExtendedTooltip" id="251"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуПроект" id="170">
+									<DataPath>~Э_СписокСобытийПоЛиду.Проект</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуПроектКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуПроектExtendedTooltip" id="252"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуРайонОбласти" id="174">
+									<DataPath>~Э_СписокСобытийПоЛиду.РайонОбласти</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуРайонОбластиКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуРайонОбластиExtendedTooltip" id="253"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуСостояниеСобытия" id="180">
+									<DataPath>~Э_СписокСобытийПоЛиду.СостояниеСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуСостояниеСобытияКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуСостояниеСобытияExtendedTooltip" id="254"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуТерритория" id="182">
+									<DataPath>~Э_СписокСобытийПоЛиду.Территория</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуТерриторияКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуТерриторияExtendedTooltip" id="255"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуТипСобытия" id="184">
+									<DataPath>~Э_СписокСобытийПоЛиду.ТипСобытия</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуТипСобытияКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуТипСобытияExtendedTooltip" id="256"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуУдалитьВремяНапоминания" id="186">
+									<DataPath>~Э_СписокСобытийПоЛиду.УдалитьВремяНапоминания</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуУдалитьВремяНапоминанияКонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуУдалитьВремяНапоминанияExtendedTooltip" id="257"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуЭ_CallIDЗвонкаBinotel" id="192">
+									<DataPath>~Э_СписокСобытийПоЛиду.Э_CallIDЗвонкаBinotel</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуЭ_CallIDЗвонкаBinotelКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуЭ_CallIDЗвонкаBinotelExtendedTooltip" id="258"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуЭ_Лид" id="194">
+									<DataPath>~Э_СписокСобытийПоЛиду.Э_Лид</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуЭ_ЛидКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуЭ_ЛидExtendedTooltip" id="259"/>
+								</LabelField>
+								<LabelField name="Э_СписокСобытийПоЛидуСтандартнаяКартинка" id="196">
+									<DataPath>Э_СписокСобытийПоЛиду.DefaultPicture</DataPath>
+									<ContextMenu name="Э_СписокСобытийПоЛидуСтандартнаяКартинкаКонтекстноеМеню" id="197"/>
+									<ExtendedTooltip name="Э_СписокСобытийПоЛидуСтандартнаяКартинкаExtendedTooltip" id="260"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="99">
+			<DataPath>Объект.Комментарий</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="100"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="261"/>
+		</InputField>
+		<UsualGroup name="ГруппаОтветственныйМенеджерСтатус" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ответственный менеджер статус</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відповідальний менеджер статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ответственный менеджер статус</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відповідальний менеджер статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтветственныйМенеджерСтатусExtendedTooltip" id="262"/>
+			<ChildItems>
+				<InputField name="ОтветсвенныйМенеджер" id="49">
+					<DataPath>Объект.ОтветсвенныйМенеджер</DataPath>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ОтветсвенныйМенеджерКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ОтветсвенныйМенеджерExtendedTooltip" id="263"/>
+				</InputField>
+				<InputField name="Статус" id="45">
+					<DataPath>Объект.Статус</DataPath>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СтатусExtendedTooltip" id="264"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа3" id="98">
+			<ExtendedTooltip name="Группа3ExtendedTooltip" id="265"/>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Э_Лиды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УдалитьПартнер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить партнер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Видалити партнер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Э_СписокСобытийПоЛиду" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список событий по лиду</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перелік подій по ліду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДокументСобытие.Ссылка,
+	ДокументСобытие.ВерсияДанных,
+	ДокументСобытие.ПометкаУдаления,
+	ДокументСобытие.Номер,
+	ДокументСобытие.Дата КАК Дата,
+	ДокументСобытие.Проведен,
+	ДокументСобытие.АдресЭлектроннойПочты,
+	ДокументСобытие.ВидОбъекта,
+	ДокументСобытие.УдалитьВремяНапоминания,
+	ДокументСобытие.ИсточникИнформацииПриОбращении,
+	ДокументСобытие.Комментарий,
+	ДокументСобытие.КонтактноеЛицо,
+	ДокументСобытие.Контрагент,
+	ДокументСобытие.CRM_Трудозатраты,
+	ДокументСобытие.НачалоСобытия,
+	ДокументСобытие.ОкончаниеСобытия,
+	ДокументСобытие.ОписаниеСобытия,
+	ДокументСобытие.Основание,
+	ДокументСобытие.Ответственный,
+	ДокументСобытие.Проект,
+	ДокументСобытие.СодержаниеСобытия,
+	ДокументСобытие.СостояниеСобытия,
+	ДокументСобытие.ТипСобытия,
+	ДокументСобытие.Помещение,
+	ДокументСобытие.Территория,
+	ДокументСобытие.ЕстьВложения,
+	ДокументСобытие.КонтактноеЛицоБезКонтрагента,
+	ДокументСобытие.Э_CallIDЗвонкаBinotel,
+	ДокументСобытие.ПредметКонтакта,
+	ДокументСобытие.ГруппаСобытия,
+	ДокументСобытие.ВидСобытия,
+	ДокументСобытие.Важность,
+	ДокументСобытие.Область,
+	ДокументСобытие.РайонОбласти,
+	ДокументСобытие.Город,
+	ДокументСобытие.Район,
+	ДокументСобытие.Школа,
+	ДокументСобытие.ШколаАдрес,
+	ДокументСобытие.РезультатКонтакта,
+	ДокументСобытие.Важное,
+	ДокументСобытие.вПервойПоловинеДня,
+	ДокументСобытие.Продукт,
+	ДокументСобытие.ОсновнойВидДеятельности,
+	ДокументСобытие.Э_Лид,
+	ДокументСобытие.СторонниеЛица.(
+		Ссылка,
+		НомерСтроки,
+		Контрагент,
+		Лицо,
+		УдалитьЛицо
+	),
+	ДокументСобытие.МоментВремени
+ИЗ
+	Документ.Событие КАК ДокументСобытие
+ГДЕ
+	ДокументСобытие.Э_Лид = &amp;Э_Лид</QueryText>
+				<MainTable>Document.Событие</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЭ_СоздатьПартнера" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда создать партнера</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда створити партнера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда "Создать партнера"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда "Створити партнера"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЭ_СоздатьПартнера</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>0:2c9d6122-f2bd-4cba-843b-1a9fdf34b0c0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

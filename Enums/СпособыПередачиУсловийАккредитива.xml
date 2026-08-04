@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="6b0fb361-a607-4833-8eee-dd23f801c28c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыПередачиУсловийАккредитива" category="Ref">
+				<xr:TypeId>ce9f8dfd-d2ac-4c9b-a66f-898d6faf7727</xr:TypeId>
+				<xr:ValueId>cc12cfb8-edb1-46ae-9e45-6520d37e27a8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыПередачиУсловийАккредитива" category="Manager">
+				<xr:TypeId>a6d51a25-3192-4925-9f53-8468cf6ad7dd</xr:TypeId>
+				<xr:ValueId>3eedf566-da80-4f20-9dec-5a8039e057bf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыПередачиУсловийАккредитива" category="List">
+				<xr:TypeId>3ec953bd-e747-45e8-99ff-2bc38ca0632f</xr:TypeId>
+				<xr:ValueId>78c03056-6834-40e8-bda9-bc2530a84898</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыПередачиУсловийАккредитива</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы передачи условий аккредитива</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>QuickChoice</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="feb2dac5-27f3-4685-adcc-a8454778e4d1">
+				<Properties>
+					<Name>Спецсвязь</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецсвязью</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Спецсвязью</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7a9903be-4cf7-487a-b554-4b025f91e95d">
+				<Properties>
+					<Name>ЭлектроннаяПочта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По электронной почте</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>По электронной почте</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5a851bf9-302d-415c-a9a7-1e6efb73a5e9">
+				<Properties>
+					<Name>Телетайп</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Телетайпом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Телетайпом</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="df6282bb-7867-4707-8864-d01d1702b9c4">
+				<Properties>
+					<Name>Другой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Другим путем</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Другим путем</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
