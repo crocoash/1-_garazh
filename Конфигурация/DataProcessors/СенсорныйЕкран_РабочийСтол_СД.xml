@@ -35,6 +35,7 @@
 			<Form>Форма_ВыбораУслуги</Form>
 			<Form>Форма_ФопПолей</Form>
 			<Form>Форма_ФормаВопроса_СД</Form>
+			<Form>Форма_Оплата</Form>
 			<Template>Макет_ШМ</Template>
 			<Template>Макет_КассовыеШины</Template>
 		</ChildObjects>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаГотово" id="200">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.Готово</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Готово</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГотовоРасширеннаяПодсказка" id="201"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="ЗаголовокЗаказа" id="10">
+			<DataPath>ЗаголовокЗаказа</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<Height>3</Height>
+			<ContextMenu name="ЗаголовокЗаказаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗаголовокЗаказаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="ГруппаЗаказы" id="15">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаказыРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<Button name="КнопкаЗаказ1" id="17">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.ПерейтиКЗаказу1</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замовлення 1</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаЗаказ1РасширеннаяПодсказка" id="18"/>
+				</Button>
+				<Button name="КнопкаЗаказ2" id="19">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.ПерейтиКЗаказу2</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замовлення 2</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаЗаказ2РасширеннаяПодсказка" id="20"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСпособ" id="25">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпособРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Decoration name="НадписьСпособ" id="27">
+					<Type>Label</Type>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спосіб оплати</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НадписьСпособРасширеннаяПодсказка" id="28"/>
+					<ContextMenu name="НадписьСпособКонтекстноеМеню" id="29"/>
+				</Decoration>
+				<Button name="КнопкаГотивка" id="30">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.ВыбратьГотивку</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГОТІВКА</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаГотивкаРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<Button name="КнопкаБезнал" id="32">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.ВыбратьБезнал</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЕЗГОТІВКОВИЙ РОЗРАХУНОК (WayForPay)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаБезналРасширеннаяПодсказка" id="33"/>
+				</Button>
+				<Button name="КнопкаУПС" id="34">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ВыбратьЗаглушку</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УПС (незабаром)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаУПСРасширеннаяПодсказка" id="35"/>
+				</Button>
+				<Button name="КнопкаRеinPost" id="36">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ВыбратьЗаглушку</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Rein Post (незабаром)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаRеinPostРасширеннаяПодсказка" id="37"/>
+				</Button>
+				<InputField name="ФормаРасчетаВыбор" id="38">
+					<DataPath>ФормаРасчетаВыбор</DataPath>
+					<Visible>false</Visible>
+					<ListChoiceMode>true</ListChoiceMode>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма розрахунку</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФормаРасчетаВыборКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ФормаРасчетаВыборРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<Button name="КнопкаПрименитьФормуРасчета" id="41">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<Visible>false</Visible>
+					<CommandName>Form.Command.ПрименитьФормуРасчета</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Застосувати форму розрахунку</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаПрименитьФормуРасчетаРасширеннаяПодсказка" id="42"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОплата" id="50">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<Visible>false</Visible>
+			<ExtendedTooltip name="ГруппаОплатаРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСуммы" id="52">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСуммыРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="СуммаДокумента" id="54">
+							<DataPath>СуммаДокумента</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Повна оплата</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="СуммаПредоплаты" id="57">
+							<DataPath>СуммаПредоплаты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Передоплата</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СуммаПредоплатыКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="СуммаПредоплатыРасширеннаяПодсказка" id="59"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнвойс" id="60">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнвойсРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<Button name="КнопкаИнвойсПолный" id="62">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.СоздатьИнвойсПолный</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Інвойс на повну суму</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаИнвойсПолныйРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<Button name="КнопкаИнвойсПредоплата" id="64">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.СоздатьИнвойсПредоплата</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Інвойс на передоплату</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаИнвойсПредоплатаРасширеннаяПодсказка" id="65"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДействия" id="70">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<Button name="КнопкаПоказатьQR" id="72">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.ПоказатьQR</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>QR для оплати</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаПоказатьQRРасширеннаяПодсказка" id="73"/>
+						</Button>
+						<Button name="КнопкаПроверитьСтатус" id="74">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.ПроверитьСтатус</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перевірити статус</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаПроверитьСтатусРасширеннаяПодсказка" id="75"/>
+						</Button>
+						<Button name="КнопкаОтправитьСМС" id="76">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.ОтправитьСМС</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Надіслати SMS</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаОтправитьСМСРасширеннаяПодсказка" id="77"/>
+						</Button>
+						<Button name="КнопкаУдалитьИнвойс" id="78">
+							<Type>UsualButton</Type>
+							<Representation>Text</Representation>
+							<CommandName>Form.Command.УдалитьИнвойс</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Видалити інвойс</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаУдалитьИнвойсРасширеннаяПодсказка" id="79"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<PictureField name="КартинкаQR" id="80">
+					<DataPath>АдресQR</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<PictureSize>Proportionally</PictureSize>
+					<Height>15</Height>
+					<ContextMenu name="КартинкаQRКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="КартинкаQRРасширеннаяПодсказка" id="82"/>
+				</PictureField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Статус" id="90">
+			<DataPath>Статус</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<Height>4</Height>
+			<ContextMenu name="СтатусКонтекстноеМеню" id="91"/>
+			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="92"/>
+		</InputField>
+		<Button name="КнопкаГотово" id="95">
+			<Type>UsualButton</Type>
+			<Representation>Text</Representation>
+			<CommandName>Form.Command.Готово</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГОТОВО</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="КнопкаГотовоРасширеннаяПодсказка" id="96"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Заказ" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Заказ2" id="2">
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийЗаказ" id="3">
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказПокупателя</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокЗаказа" id="4">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаДокумента" id="5">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаПредоплаты" id="6">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Телефон" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСМС" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="URLИнвойса" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="URLИнвойсаПредоплата" id="21">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресQR" id="22">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Статус" id="23">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФормаРасчетаВыбор" id="24">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФормыРасчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследняяОперацияПредоплата" id="43">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьГотивку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готівка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьГотивку</Action>
+		</Command>
+		<Command name="ВыбратьБезнал" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Безготівковий розрахунок</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьБезнал</Action>
+		</Command>
+		<Command name="ВыбратьЗаглушку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Незабаром</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьЗаглушку</Action>
+		</Command>
+		<Command name="ПрименитьФормуРасчета" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Застосувати форму розрахунку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПрименитьФормуРасчета</Action>
+		</Command>
+		<Command name="СоздатьИнвойсПолный" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Інвойс на повну суму</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьИнвойсПолный</Action>
+		</Command>
+		<Command name="СоздатьИнвойсПредоплата" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Інвойс на передоплату</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьИнвойсПредоплата</Action>
+		</Command>
+		<Command name="ПоказатьQR" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>QR для оплати</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказатьQR</Action>
+		</Command>
+		<Command name="ПроверитьСтатус" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевірити статус</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьСтатус</Action>
+		</Command>
+		<Command name="ОтправитьСМС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надіслати SMS</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОтправитьСМС</Action>
+		</Command>
+		<Command name="УдалитьИнвойс" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видалити інвойс</v8:content>
+				</v8:item>
+			</Title>
+			<Action>УдалитьИнвойс</Action>
+		</Command>
+		<Command name="ПерейтиКЗаказу1" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення 1</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПерейтиКЗаказу1</Action>
+		</Command>
+		<Command name="ПерейтиКЗаказу2" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення 2</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПерейтиКЗаказу2</Action>
+		</Command>
+		<Command name="Готово" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Готово</Action>
+		</Command>
+	</Commands>
+</Form>

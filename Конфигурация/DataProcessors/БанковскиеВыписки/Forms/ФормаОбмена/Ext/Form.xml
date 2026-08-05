@@ -212,35 +212,47 @@
 				<InputField name="ДокументыКИмпортуДатаПроведения" id="63">
 					<DataPath>Объект.ДокументыКИмпорту.ДатаПроведения</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>19</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуДатаПроведенияКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ДокументыКИмпортуДатаПроведенияРасширеннаяПодсказка" id="65"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуДатаКомпенсации" id="120">
 					<DataPath>Объект.ДокументыКИмпорту.ДатаКомпенсации</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>19</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуДатаКомпенсацииКонтекстноеМеню" id="121"/>
 					<ExtendedTooltip name="ДокументыКИмпортуДатаКомпенсацииРасширеннаяПодсказка" id="122"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуНомерДок" id="66">
 					<DataPath>Объект.ДокументыКИмпорту.НомерДок</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>22</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуНомерДокКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ДокументыКИмпортуНомерДокРасширеннаяПодсказка" id="68"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуСуммаПоступило" id="69">
 					<DataPath>Объект.ДокументыКИмпорту.СуммаПоступило</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуСуммаПоступилоКонтекстноеМеню" id="70"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСуммаПоступилоРасширеннаяПодсказка" id="71"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуСуммаСписано" id="72">
 					<DataPath>Объект.ДокументыКИмпорту.СуммаСписано</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуСуммаСписаноКонтекстноеМеню" id="73"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСуммаСписаноРасширеннаяПодсказка" id="74"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуКонтрагент" id="75">
 					<DataPath>Объект.ДокументыКИмпорту.Контрагент</DataPath>
+					<Width>26</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуКонтрагентКонтекстноеМеню" id="76"/>
 					<ExtendedTooltip name="ДокументыКИмпортуКонтрагентРасширеннаяПодсказка" id="77"/>
 					<Events>
@@ -249,6 +261,8 @@
 				</InputField>
 				<InputField name="ДокументыКИмпортуЗаказ" id="78">
 					<DataPath>Объект.ДокументыКИмпорту.Заказ</DataPath>
+					<Width>32</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуЗаказКонтекстноеМеню" id="79"/>
 					<ExtendedTooltip name="ДокументыКИмпортуЗаказРасширеннаяПодсказка" id="80"/>
 					<Events>
@@ -258,37 +272,57 @@
 				<InputField name="ДокументыКИмпортуСуммаЗаказа" id="81">
 					<DataPath>Объект.ДокументыКИмпорту.СуммаЗаказа</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуСуммаЗаказаКонтекстноеМеню" id="82"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСуммаЗаказаРасширеннаяПодсказка" id="83"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуСодержание" id="84">
 					<DataPath>Объект.ДокументыКИмпорту.Содержание</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>45</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуСодержаниеКонтекстноеМеню" id="85"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСодержаниеРасширеннаяПодсказка" id="86"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуПодразделение" id="87">
 					<DataPath>Объект.ДокументыКИмпорту.Подразделение</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>26</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуПодразделениеКонтекстноеМеню" id="88"/>
 					<ExtendedTooltip name="ДокументыКИмпортуПодразделениеРасширеннаяПодсказка" id="89"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуСчетОрганизации" id="90">
 					<DataPath>Объект.ДокументыКИмпорту.СчетОрганизации</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>22</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуСчетОрганизацииКонтекстноеМеню" id="91"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСчетОрганизацииРасширеннаяПодсказка" id="92"/>
+				</InputField>
+				<InputField name="ДокументыКИмпортуСчетПлатежа" id="133">
+					<DataPath>Объект.ДокументыКИмпорту.СчетПлатежа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>22</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуСчетПлатежаКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ДокументыКИмпортуСчетПлатежаРасширеннаяПодсказка" id="135"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуПлатежныйДокумент" id="93">
 					<DataPath>Объект.ДокументыКИмпорту.ПлатежныйДокумент</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<OpenButton>true</OpenButton>
+					<Width>38</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуПлатежныйДокументКонтекстноеМеню" id="94"/>
 					<ExtendedTooltip name="ДокументыКИмпортуПлатежныйДокументРасширеннаяПодсказка" id="95"/>
 				</InputField>
 				<InputField name="ДокументыКИмпортуОшибка" id="96">
 					<DataPath>Объект.ДокументыКИмпорту.Ошибка</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДокументыКИмпортуОшибкаКонтекстноеМеню" id="97"/>
 					<ExtendedTooltip name="ДокументыКИмпортуОшибкаРасширеннаяПодсказка" id="98"/>
 				</InputField>

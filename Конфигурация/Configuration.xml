@@ -866,6 +866,7 @@
 			<CommonModule>БП_УправлениеЗапасамиПартионныйУчет</CommonModule>
 			<CommonModule>ЦВ_ПривилегированныеОперации</CommonModule>
 			<CommonModule>БанковскиеВыписки</CommonModule>
+			<CommonModule>СенсорныйЕкран_Оплата_СД</CommonModule>
 			<ExchangePlan>ОбменССайтомЗаказами</ExchangePlan>
 			<ExchangePlan>ОбменССайтомТоварами</ExchangePlan>
 			<ExchangePlan>ОбменУправлениеТорговлейБухгалтерия</ExchangePlan>
