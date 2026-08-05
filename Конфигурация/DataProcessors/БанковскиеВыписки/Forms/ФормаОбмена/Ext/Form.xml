@@ -76,6 +76,18 @@
 				</Title>
 				<ExtendedTooltip name="ФормаИзменитьДатуПлатежаРасширеннаяПодсказка" id="105"/>
 			</Button>
+			<Button name="ФормаИзменитьОрганизациюПлатежа" id="145">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ИзменитьОрганизациюПлатежа</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Изменить организацию платежа</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаИзменитьОрганизациюПлатежаРасширеннаяПодсказка" id="146"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -158,6 +170,16 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ТолькоСРасхождениемДатКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ТолькоСРасхождениемДатРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ОтборПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТолькоСРасхождениемОрганизации" id="142">
+					<DataPath>ТолькоСРасхождениемОрганизации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоСРасхождениемОрганизацииКонтекстноеМеню" id="143"/>
+					<ExtendedTooltip name="ТолькоСРасхождениемОрганизацииРасширеннаяПодсказка" id="144"/>
 					<Events>
 						<Event name="OnChange">ОтборПриИзменении</Event>
 					</Events>
@@ -309,6 +331,34 @@
 					<ContextMenu name="ДокументыКИмпортуСчетПлатежаКонтекстноеМеню" id="134"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСчетПлатежаРасширеннаяПодсказка" id="135"/>
 				</InputField>
+				<InputField name="ДокументыКИмпортуОрганизацияЗаказа" id="136">
+					<DataPath>Объект.ДокументыКИмпорту.ОрганизацияЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация заказа</v8:content>
+						</v8:item>
+					</Title>
+					<Width>28</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуОрганизацияЗаказаКонтекстноеМеню" id="137"/>
+					<ExtendedTooltip name="ДокументыКИмпортуОрганизацияЗаказаРасширеннаяПодсказка" id="138"/>
+				</InputField>
+				<InputField name="ДокументыКИмпортуОрганизацияПлатежа" id="139">
+					<DataPath>Объект.ДокументыКИмпорту.ОрганизацияПлатежа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация в платеже</v8:content>
+						</v8:item>
+					</Title>
+					<Width>28</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуОрганизацияПлатежаКонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="ДокументыКИмпортуОрганизацияПлатежаРасширеннаяПодсказка" id="141"/>
+				</InputField>
 				<InputField name="ДокументыКИмпортуПлатежныйДокумент" id="93">
 					<DataPath>Объект.ДокументыКИмпорту.ПлатежныйДокумент</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -347,6 +397,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Только мои заказы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоСРасхождениемОрганизации" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только с расхождением организации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -465,6 +526,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ИзменитьДатуПлатежа</Action>
+		</Command>
+		<Command name="ИзменитьОрганизациюПлатежа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить организацию платежа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>У выделенных строк привести организацию платежа к организации заказа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьОрганизациюПлатежа</Action>
 		</Command>
 	</Commands>
 </Form>
