@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<HTTPService uuid="5769c391-036a-4011-9e15-a40f885f7d3a">
+		<Properties>
+			<Name>HTTPОбменССайтомAPI</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTTPОбмен с сайтом API</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>api</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="c97d407e-323a-4d1d-a19d-2114f60acbab">
+				<Properties>
+					<Name>CustomerCreate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Customer create</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/customer/create</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="11e0d1a4-946d-4f61-bd41-005776adeac1">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>CustomerCreateCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="55c535b4-2c22-4539-81ca-2b310e93d554">
+				<Properties>
+					<Name>CustomerCreateGarazh</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Customer create garazh</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/customer/create</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="4fc1a9cb-f4fd-487b-984a-28b1170b8fa7">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>CustomerCreateCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="8cc435bc-808c-435b-9983-7da63d334b54">
+				<Properties>
+					<Name>CustomerUpdate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Customer update</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/customer/update</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b365e0e2-d1f5-4377-98e3-b7675e515e3e">
+						<Properties>
+							<Name>UpdatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Update post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>CustomerUpdateUpdatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="f31a5277-72ea-430d-a3b0-2661edd44b28">
+				<Properties>
+					<Name>CustomerUpdateGarazg</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Customer update garazg</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/customer/update</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="89a42ddf-f45a-43ee-aebf-d79ea88361ad">
+						<Properties>
+							<Name>UpdatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Update post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>CustomerUpdateUpdatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="6252afe8-7119-4601-b816-d4d80b5b7ae7">
+				<Properties>
+					<Name>OrderCreate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Order create</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order/create</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b1434f5b-a4e7-4a17-a871-9531d3bf732b">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>OrderCreateCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="e7226cb9-0c7f-4225-ba7f-9e7cba250c9c">
+				<Properties>
+					<Name>OrderCreateGarazh</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Order create garazh</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/order/create</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="2a215799-a331-4a85-a70f-ce2e0bbaa7af">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>OrderCreateGarazhCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="113fe562-1544-4be8-8909-a7e85dfa5bdb">
+				<Properties>
+					<Name>OrderUpdate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Order update</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order/update</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="ad1631a1-1bd4-47c2-9370-d7aa89427681">
+						<Properties>
+							<Name>UpdatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Update post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>OrderUpdateUpdatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="3c82cd51-eba7-4fbb-a4b3-7c9876e87200">
+				<Properties>
+					<Name>OrderUpdateGarazh</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Order update garazh</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/order/update</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="de690f65-6ee4-4851-864b-1df1d3e91d97">
+						<Properties>
+							<Name>UpdatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Update post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>OrderUpdateGarazhUpdatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="442e3914-4fb7-4822-8613-73a8994a6ccf">
+				<Properties>
+					<Name>FormOrderCreate</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Form order create</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/form/send</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="8a1989ba-7a4c-4517-ab83-ff03619439cf">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>FormOrderCreateCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="fd9d6f3e-66ff-4977-90c6-163372da1e23">
+				<Properties>
+					<Name>FormOrderCreateGarazh</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Form order create garazh</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/form/send</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="51909b58-238e-4c25-995a-eccab5a75462">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>FormOrderCreateGarazhCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="62de4095-ac1d-4545-bce2-e6943de3c274">
+				<Properties>
+					<Name>AsyncAnswer</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Async answer</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/async/answer/{request_id}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="ee905ffe-60c9-4f01-ae2c-dc6d3fc8ffad">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>AsyncAnswerCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="16a4b3ce-8f1e-42c1-ab22-4a37c78a54c8">
+				<Properties>
+					<Name>AsyncAnswerGarazh</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Async answer garazh</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/garazh/async/answer/{request_id}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="f953e30b-f94a-4622-be06-a7c3c52e5b1a">
+						<Properties>
+							<Name>CreatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Create post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>AsyncAnswerGarazhCreatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="7e73df11-c41b-4ff6-bf3a-ec47bc04776f">
+				<Properties>
+					<Name>TerminalPay</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Terminal pay</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/terminal/pay</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="23786c27-332c-4b78-8859-f6f6ae34b99a">
+						<Properties>
+							<Name>TerminalPay</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Terminal pay</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>TerminalPay</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

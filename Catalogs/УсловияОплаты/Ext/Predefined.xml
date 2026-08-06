@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="4e32d5b2-9c86-4916-82d8-ed7cbf7805fb">
+		<Name>Оплатапофактупоставки</Name>
+		<Code>000000002</Code>
+		<Description>Оплата по факту поставки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df43a267-bdec-4b66-87dc-4233aa9518c5">
+		<Name>Отсрочкаплатежа</Name>
+		<Code>000000003</Code>
+		<Description>Отсрочка платежа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="523286fe-0ad8-4566-ba92-f44623ccfbe5">
+		<Name>Предоплата</Name>
+		<Code>000000001</Code>
+		<Description>Предоплата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
