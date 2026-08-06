@@ -295,6 +295,20 @@
 					<ContextMenu name="ДокументыКИмпортуСуммаСписаноКонтекстноеМеню" id="73"/>
 					<ExtendedTooltip name="ДокументыКИмпортуСуммаСписаноРасширеннаяПодсказка" id="74"/>
 				</InputField>
+				<InputField name="ДокументыКИмпортуСуммаЗаказа" id="152">
+					<DataPath>Объект.ДокументыКИмпорту.СуммаЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма заказа</v8:content>
+						</v8:item>
+					</Title>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуСуммаЗаказаКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="ДокументыКИмпортуСуммаЗаказаРасширеннаяПодсказка" id="154"/>
+				</InputField>
 				<InputField name="ДокументыКИмпортуКонтрагент" id="75">
 					<DataPath>Объект.ДокументыКИмпорту.Контрагент</DataPath>
 					<Width>26</Width>
