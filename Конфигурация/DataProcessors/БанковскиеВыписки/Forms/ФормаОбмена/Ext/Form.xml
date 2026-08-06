@@ -244,6 +244,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ДокументыКИмпортуВыбор</Event>
+				<Event name="OnActivateRow">ДокументыКИмпортуПриАктивизацииСтроки</Event>
 			</Events>
 			<ChildItems>
 				<CheckBoxField name="ДокументыКИмпортуЗагружать" id="60">
