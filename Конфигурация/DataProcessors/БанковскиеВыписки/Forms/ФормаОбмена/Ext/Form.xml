@@ -315,14 +315,6 @@
 						<Event name="OnChange">ДокументыКИмпортуЗаказПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="ДокументыКИмпортуСуммаЗаказа" id="81">
-					<DataPath>Объект.ДокументыКИмпорту.СуммаЗаказа</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Width>13</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="ДокументыКИмпортуСуммаЗаказаКонтекстноеМеню" id="82"/>
-					<ExtendedTooltip name="ДокументыКИмпортуСуммаЗаказаРасширеннаяПодсказка" id="83"/>
-				</InputField>
 				<InputField name="ДокументыКИмпортуСодержание" id="84">
 					<DataPath>Объект.ДокументыКИмпорту.Содержание</DataPath>
 					<ReadOnly>true</ReadOnly>
