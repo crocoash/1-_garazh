@@ -375,6 +375,20 @@
 					<ContextMenu name="ДокументыКИмпортуОрганизацияЗаказаКонтекстноеМеню" id="137"/>
 					<ExtendedTooltip name="ДокументыКИмпортуОрганизацияЗаказаРасширеннаяПодсказка" id="138"/>
 				</InputField>
+				<InputField name="ДокументыКИмпортуОрганизацияМерчанта" id="155">
+					<DataPath>Объект.ДокументыКИмпорту.ОрганизацияМерчанта</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация мерчанта</v8:content>
+						</v8:item>
+					</Title>
+					<Width>28</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуОрганизацияМерчантаКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="ДокументыКИмпортуОрганизацияМерчантаРасширеннаяПодсказка" id="157"/>
+				</InputField>
 				<InputField name="ДокументыКИмпортуОрганизацияПлатежа" id="139">
 					<DataPath>Объект.ДокументыКИмпорту.ОрганизацияПлатежа</DataPath>
 					<ReadOnly>true</ReadOnly>
