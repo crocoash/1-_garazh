@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="8f43e6de-0103-44c0-80cc-c4c8f18335ef">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТООшибкиККМOffline" category="Ref">
+				<xr:TypeId>26fbf414-2564-4b1a-99b8-983c376d69b1</xr:TypeId>
+				<xr:ValueId>25829b05-8664-4a06-89bc-69e6092dce65</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТООшибкиККМOffline" category="Manager">
+				<xr:TypeId>de4051d1-7959-4388-8e3d-f770c567f317</xr:TypeId>
+				<xr:ValueId>6eaa3fe6-13e9-41f8-9b73-a517f828b05d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТООшибкиККМOffline" category="List">
+				<xr:TypeId>5af0280f-fe54-4ca3-95c0-ce5c381de17d</xr:TypeId>
+				<xr:ValueId>04dea6f1-bf25-4ffc-9848-a6023f561769</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТООшибкиККМOffline</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТООшибки ККМOffline</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="09205440-15e0-471e-980b-856e9c4050e0">
+				<Properties>
+					<Name>ОшибкаВыгрузкиТоваров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При попытке выгрузки товаров в ККМ, подключаемую в режиме Offline, произошла ошибка. Товары не были выгружены.</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Необходимо проверить параметры настройки и подключения ККМ и повторить попытку выгрузки товаров.</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="990cb8da-56cc-46f7-bd31-3a15d5f75bd3">
+				<Properties>
+					<Name>ОшибкаЗагрузкиОтчета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При попытке загрузки отчёта о продажах из ККМ, подключаемой в режиме Offline, произошла ошибка. Отчёт не был загружен.</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Необходимо проверить параметры настройки и подключения ККМ и повторить попытку загрузки отчёта.</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

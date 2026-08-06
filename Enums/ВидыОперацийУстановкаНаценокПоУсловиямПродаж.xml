@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Enum uuid="6c7f3dfa-4e23-462e-9677-a64435da1883">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыОперацийУстановкаНаценокПоУсловиямПродаж" category="Ref">
+				<xr:TypeId>e2cd065e-493f-48a8-88dd-f6ead8d4e57b</xr:TypeId>
+				<xr:ValueId>89a57a85-c62b-47bd-b1d6-8dd9fd19a88f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыОперацийУстановкаНаценокПоУсловиямПродаж" category="Manager">
+				<xr:TypeId>9014c0c3-641f-4fc8-8158-aa491fdc4b53</xr:TypeId>
+				<xr:ValueId>60b8a55e-f84c-4d60-9b32-f99ffe89f623</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыОперацийУстановкаНаценокПоУсловиямПродаж" category="List">
+				<xr:TypeId>42c4904d-4aad-4ee1-995f-767a57089a90</xr:TypeId>
+				<xr:ValueId>0d925946-95cb-4358-9d26-fec54634837c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыОперацийУстановкаНаценокПоУсловиямПродаж</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды операций документа "Установка наценок по условиям продаж"</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Упр)</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="a5a038d4-c686-44c8-bcdb-afe337198c06">
+				<Properties>
+					<Name>ПоЦеновымГруппам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по ценовым группам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9f1a8ff6-c483-4c93-9734-c8962aff8c7a">
+				<Properties>
+					<Name>ПоНоменклатурнымГруппам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по номенклатурным группам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
