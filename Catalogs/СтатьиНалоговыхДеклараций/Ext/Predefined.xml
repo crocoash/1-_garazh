@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="c69cbf4d-c415-486c-803f-33f382a7a018">
+		<Name>Акциз_</Name>
+		<Code>00557</Code>
+		<Description>Акцизный налог</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="56b291a9-34cf-46dd-8180-b46062af27dd">
+				<Name>Акциз_Розница_</Name>
+				<Code>00558</Code>
+				<Description>Акцизный налог при реализации через розничную торговую сеть</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="bd6317c5-9362-490d-8072-01c38e3f7f4f">
+						<Name>Акциз_Розница_Алкоголь</Name>
+						<Code>00559</Code>
+						<Description>Ґ1.1. Ликеро-водочная продукция: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d55423e8-b520-4e2b-baa2-3058b631fa87">
+						<Name>Акциз_Розница_Биодизель</Name>
+						<Code>00560</Code>
+						<Description>Ґ1.10. Биодизель и его смеси: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1dbb289a-74f3-4131-9ac3-f2eb3aff3d54">
+						<Name>Акциз_Розница_Другие</Name>
+						<Code>00561</Code>
+						<Description>Ґ1.11. Другие подакцизные товары: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0a09079d-8903-40c9-9b7c-a917ee18aef4">
+						<Name>Акциз_Розница_Вино</Name>
+						<Code>00562</Code>
+						<Description>Ґ1.2. Винодельческая продукция, другие спиртовые дистилляты, спиртосодержащая продукция: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="37278829-e5f7-4eba-8f67-254447ea0799">
+						<Name>Акциз_Розница_Пиво</Name>
+						<Code>00563</Code>
+						<Description>Ґ1.3. Пиво: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="096df3e9-c5b2-4419-b20c-59a43d398f55">
+						<Name>Акциз_Розница_Табак</Name>
+						<Code>00564</Code>
+						<Description>Ґ1.4. Табак и изделия из него: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="bbc4943b-2392-4b76-bc17-9f1da2f0c841">
+						<Name>Акциз_Розница_Бензин</Name>
+						<Code>00565</Code>
+						<Description>Ґ1.5. Бензины моторные: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8487f6f9-5c3d-47da-b05f-1a3c1ed8b68f">
+						<Name>Акциз_Розница_НефтепродуктыДругие</Name>
+						<Code>00566</Code>
+						<Description>Ґ1.6. Другие нефтепродукты (п. 215.3.4 НКУ): акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ecd2c67b-45ce-4527-b7c0-217bbf27ed2b">
+						<Name>Акциз_Розница_ГазСжиженый</Name>
+						<Code>00567</Code>
+						<Description>Ґ1.7. Сжиженый газ: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a363e13a-e8b6-4997-b07e-33332741a494">
+						<Name>Акциз_Розница_Компоненты</Name>
+						<Code>00568</Code>
+						<Description>Ґ1.8. Компоненты моторного топлива: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ca0b8000-9a66-4af0-914e-05628344aa5b">
+						<Name>Акциз_Розница_ТопливоАльтернативное</Name>
+						<Code>00569</Code>
+						<Description>Ґ1.9. Альтернативное моторное топливо: акцизный налог при реализации в розницу</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="aff384b4-604c-4a8b-96a5-38ff88516c2e">
+		<Name>ЕННК_</Name>
+		<Code>00534</Code>
+		<Description>Декларация плательщика единого налога</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="3bd81d35-e215-4137-8ddb-8fbd1a3a7278">
+				<Name>ЕННК_Доходы</Name>
+				<Code>00535</Code>
+				<Description>Доходы</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="5ea3c00b-acbc-426f-8f98-bebf12d79f90">
+						<Name>ЕННК_ДоходыДоходыПоВидуДеятельностиНеУказанномуВСвидетельстве</Name>
+						<Code>00537</Code>
+						<Description>Доход, полученный в результате деятельности не указанной в свидетельстве плательщика единого налога</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9ec472f2-4244-4a3e-ad34-72d3978a5a09">
+						<Name>ЕННК_ДоходыДоходыДругойСпособРасчетов</Name>
+						<Code>00538</Code>
+						<Description>Доход, полученный при использовании не предусмотренного способа расчетов</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f9b4d270-3a63-465a-98bb-455f84189b83">
+						<Name>ЕННК_ДоходыДоходыПоВидуДеятельностиНеЕдиныйНалог</Name>
+						<Code>00539</Code>
+						<Description>Доход, полученный при осуществлении видов деятельности, которые не дают права использовать упрощенную систему налогообложения</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2f534998-7a2a-44da-86b2-19432d3144bd">
+						<Name>ЕННК_ДоходыДоходомНеПризнается</Name>
+						<Code>00540</Code>
+						<Description>Доходом не признается</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8e93fc56-d8ec-46c4-932b-e89546532d9c">
+						<Name>ЕННК_ДоходыСтоимостьБезоплатноПолученных</Name>
+						<Code>00541</Code>
+						<Description>Стоимость безоплатно полученных товаров (работ, услуг)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="28d174d9-41db-4505-819b-07514dea706f">
+						<Name>ЕННК_ДоходыРеализация</Name>
+						<Code>00542</Code>
+						<Description>Стоимость проданных товаров (работ, услуг)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="3b6b3cfe-c2e6-44bc-906b-3a73300c1f19">
+						<Name>ЕННК_ДоходыВозвраты</Name>
+						<Code>00543</Code>
+						<Description>Сумма возвращенных средств за товары (работы, услуги)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="b360088a-820e-47d6-a1b2-9f073df82a86">
+						<Name>ЕННК_ДоходыПросроченнаяЗадолженность</Name>
+						<Code>00544</Code>
+						<Description>Сумма задолженности, по которой истек срок давности</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="3087c355-d06f-48f0-a223-c2039811f7c7">
+				<Name>ЕННК_Затраты</Name>
+				<Code>00536</Code>
+				<Description>Затраты (для плательщика НДС)</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="845314fe-5c3a-4f2b-92c7-718bf67e480c">
+						<Name>ЕННК_ЗатратыДругиеЗатраты</Name>
+						<Code>00545</Code>
+						<Description>Другие затраты</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="59cb525e-1f8c-46bd-b541-e3e1f15d9fc5">
+						<Name>ЕННК_ЗатратыЕСВ</Name>
+						<Code>00546</Code>
+						<Description>Единый взнос на общеобязательное государственное социальное страхование</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="feefefe7-64bd-4dbe-82a2-28e8830afe71">
+						<Name>ЕННК_ЗатратыЗатратыСвязанныеСПриобретением</Name>
+						<Code>00547</Code>
+						<Description>Затраты связанные с приобретением товаров (работ, услуг)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1f89f013-69d2-4a98-bc56-a9ec620824d8">
+						<Name>ЕННК_ЗатратыОплатаТруда</Name>
+						<Code>00548</Code>
+						<Description>Расходы на оплату труда наемных работников</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8e8f4652-e853-4ad4-90d2-52a199aac6a7">
+		<Name>НДС_</Name>
+		<Code>00119</Code>
+		<Description>Декларация по НДС</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="308c7202-cd8f-4e75-852f-4e0830855784">
+				<Name>НДС_НОПоСтавке20</Name>
+				<Code>00120</Code>
+				<Description>1.1. (1.2.) Операции по ставке 20% (7%) кроме импорта товаров (до 01.12.14 - 1. Операции по ставке 20%)</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="61e8ed0a-212f-436e-8230-da4fd65efa8a">
+						<Name>НДС_НОПоСтавке20ПоставкаОФ</Name>
+						<Code>00262</Code>
+						<Description>(из 1.1. (1.2.)) Поставка ОФ (для прил. Д5) (до 01.12.14 - из п. 1.)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="f831a90e-cf93-441a-8b06-576d4b9c18e6">
+				<Name>НДС_НКПокупкаСНДСвВР_</Name>
+				<Code>00124</Code>
+				<Description>10.1. (10.1.1., 10.1.2.)  для осуществления операций, подлежащих налогообложению</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="12b7d1ce-2428-4b3b-8fdc-6d3ffa966b7f">
+						<Name>НДС_НКПокупкаСНДСвВРОблаг</Name>
+						<Code>00125</Code>
+						<Description>10.1. для осуществления операций, подлежащих налогообложению</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="0a04629f-9e73-48ab-afe2-ccbb03724ca2">
+								<Name>НДС_НКПокупкаСНДСвВРОблагПриобрОФ</Name>
+								<Code>00264</Code>
+								<Description>(из 10.1. (10.1.1., 10.1.2.)) Приобретение (стр-во) ОФ (для прил. Д5)</Description>
+								<IsFolder>false</IsFolder>
+								<ChildItems>
+									<Item id="d317848f-feb9-47ed-884c-05c88be6713a">
+										<Name>НДС_НКПокупкаСНДСвВРНеОблаг</Name>
+										<Code>00126</Code>
+										<Description>10.2. (10.2.1., 10.2.2.) для осуществления операций, не подлежащих налогообложению, не есть объектом налогообложения</Description>
+										<IsFolder>false</IsFolder>
+										<ChildItems>
+											<Item id="d5ec52ac-44de-46c4-83ae-65567bde3406">
+												<Name>НДС_НКПокупкаСНДСвВРНеОблагУслугВнеУкраины</Name>
+												<Code>00302</Code>
+												<Description>(из 10.2. (10.2.1, 10.2.2.)) для услуг за пределами Украины</Description>
+												<IsFolder>false</IsFolder>
+											</Item>
+										</ChildItems>
+									</Item>
+								</ChildItems>
+							</Item>
+							<Item id="a384eda6-d0f9-4177-87aa-c1a739c47d0d">
+								<Name>НДС_НКПокупкаБезНДСвВР_</Name>
+								<Code>00127</Code>
+								<Description>11. Приобретение без НДС товаров/ОС, НМА в  Украине для хоз. деятельности (до 01.06.05 - с ВР/амортизацией)</Description>
+								<IsFolder>false</IsFolder>
+								<ChildItems>
+									<Item id="80d5656a-09bd-486f-83f8-faf4d333d23f">
+										<Name>НДС_НКПокупкаБезНДСвВРОблаг</Name>
+										<Code>00128</Code>
+										<Description>11.1. для осуществления операций, подлежащих налогообложению</Description>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="4bad18c5-8030-4141-9a49-a8273a129777">
+										<Name>НДС_НКПокупкаБезНДСвВРНеОблаг</Name>
+										<Code>00129</Code>
+										<Description>11.2. для осуществления операций, не подлежащих налогообложению</Description>
+										<IsFolder>false</IsFolder>
+										<ChildItems>
+											<Item id="ac0b9d41-486a-4f2e-9ddd-506ac4b97fef">
+												<Name>НДС_НКПокупкаБезНДСвВРНеОблагУслугВнеУкраины</Name>
+												<Code>00303</Code>
+												<Description>(из 11.2) для услуг за пределами Украины</Description>
+												<IsFolder>false</IsFolder>
+											</Item>
+										</ChildItems>
+									</Item>
+								</ChildItems>
+							</Item>
+							<Item id="6e9129ec-16e9-4747-aa8f-1a3a3ad3fd77">
+								<Name>НДС_НКПропорционально</Name>
+								<Code>00304</Code>
+								<Description>15. Приобретение с НДС частично для облагаемых и частично для не облагаемых операций</Description>
+								<IsFolder>false</IsFolder>
+								<ChildItems>
+									<Item id="9615363f-d624-4833-b826-30dbcf96b113">
+										<Name>НДС_НКПропорциональноВклВКредитПоставкаОФ</Name>
+										<Code>00311</Code>
+										<Description>(из 15.1.) Приобретение (стр-во) ОФ (для прил. Д5) </Description>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="50a19f26-dad2-4f43-976b-068da35dee55">
+										<Name>НДС_НКПропорциональноНеВклВКредитПоставкаОФ</Name>
+										<Code>00312</Code>
+										<Description>(из 15.2.) Приобретение (стр-во) ОФ: Приобретение с НДС пропорционально: часть, которая НЕ включается в налоговый кредит</Description>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="aa4841a6-7716-41a7-969b-ceb6a261067c">
+										<Name>НДС_НКПропорциональноВклВКредит</Name>
+										<Code>00305</Code>
+										<Description>15.1. Приобретение с НДС пропорционально: часть, которая включается в налоговый кредит</Description>
+										<IsFolder>false</IsFolder>
+									</Item>
+									<Item id="7d8bdc50-a2b2-4800-b43e-f2b97f3dee5d">
+										<Name>НДС_НКПропорциональноНеВклВКредит</Name>
+										<Code>00306</Code>
+										<Description>15.2. Приобретение с НДС пропорционально: часть, которая НЕ включается в налоговый кредит</Description>
+										<IsFolder>false</IsFolder>
+									</Item>
+								</ChildItems>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="068ed93b-fb9a-4780-b04d-df15534a8f38">
+						<Name>НДС_НКПокупкаСНДСнеВР_</Name>
+						<Code>00147</Code>
+						<Description>14.1. Приобретение с НДС товаров/ОС, НМА не для хоз. деятельности (до 01.03.2011 - 14 (до 01.06.05 - не ВР/без амортизации)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="20eb085a-9a14-4f58-a494-4e8d4a75ec2c">
+						<Name>НДС_НКПокупкаБезНДСнеВР_</Name>
+						<Code>00152</Code>
+						<Description>14.2. Приобретение без НДС товаров/ОС, НМА не для хоз. деятельности (до 01.03.11 - 15 (до 01.06.05 - не ВР/без амортизации))</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="502cf8db-65b1-4461-b1bc-7392104e94af">
+				<Name>НДС_НКИмпортВРОблаг_</Name>
+				<Code>00130</Code>
+				<Description>12. Импортные товары, ОС,НМА для облагаемых операций для хоз. деятельности (до 01.06.05 - с ВР/амортизацией)</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="59c1c0da-a053-47c7-9257-c14bc56ba769">
+						<Name>НДС_НКИмпортВРОблагНДСТамож</Name>
+						<Code>00131</Code>
+						<Description>12.1. (12.1.1., 12.1.2.) НДС, уплаченный таможенным органам</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="facb7c55-f096-4b48-8b30-3d5ca01ecf46">
+								<Name>НДС_НКИмпортВРОблагБезНДС</Name>
+								<Code>00133</Code>
+								<Description>12.3. освобожденные от НДС</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="d2ff6e36-f9c5-4535-8579-12554923c5cb">
+								<Name>НДС_НКИмпортВРНеОблаг_</Name>
+								<Code>00136</Code>
+								<Description>13. Импортные товары, ОС,НМА  для необлагаемых, не НДС операций для хоз. деятельности</Description>
+								<IsFolder>false</IsFolder>
+								<ChildItems>
+									<Item id="941ef7cf-c5df-43fc-b5e3-20f35bba49b8">
+										<Name>НДС_НКИмпортВРНеОблагНеОбъект_</Name>
+										<Code>00137</Code>
+										<Description> --&gt; (До 01.06.05 - 13.1. из строки 13 - для осуществления операций, не подлежащих налогообложению)</Description>
+										<IsFolder>false</IsFolder>
+										<ChildItems>
+											<Item id="c9e10dad-15c0-4c61-ad65-0b45d9db08dc">
+												<Name>НДС_НКИмпортВРНеОблагНеОбъектНДСТамож</Name>
+												<Code>00138</Code>
+												<Description>13.1. НДС, уплаченный таможенным органам (до 01.06.05 - 13.1.1. ... для операций, не подлежащих налогообложению)</Description>
+												<IsFolder>false</IsFolder>
+												<ChildItems>
+													<Item id="f508c645-6937-4087-aeb5-121f4a4e5ad6">
+														<Name>НДС_НКИмпортВРНеОблагНеОбъектНДСТаможУслугВнеУкраины</Name>
+														<Code>00299</Code>
+														<Description>(из 13.1.) для услуг за пределами Украины</Description>
+														<IsFolder>false</IsFolder>
+													</Item>
+												</ChildItems>
+											</Item>
+											<Item id="a5b0221a-6588-4885-a65b-0158fd003004">
+												<Name>НДС_НКИмпортВРНеОблагНеОбъектБезНДС</Name>
+												<Code>00140</Code>
+												<Description>13.2. освобожденные от НДС (до 01.06.05 - 13.1.2. ... для операций, не подлежащих налогообложению)</Description>
+												<IsFolder>false</IsFolder>
+												<ChildItems>
+													<Item id="8f161811-0ebc-4296-bc84-eadc17380ca3">
+														<Name>НДС_НКИмпортВРНеОблагНеОбъектБезНДСУслугВнеУкраины</Name>
+														<Code>00300</Code>
+														<Description>(из 13.2.) для услуг за пределами Украины</Description>
+														<IsFolder>false</IsFolder>
+													</Item>
+												</ChildItems>
+											</Item>
+										</ChildItems>
+									</Item>
+								</ChildItems>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="758817c0-1398-496b-aa84-d9df8713a505">
+				<Name>НДС_НККорректировка_</Name>
+				<Code>00157</Code>
+				<Description>16. Корректировка налогового кредита</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="bfff4362-7612-4458-9b31-2e3d372b0c2c">
+						<Name>НДС_НКИзменениеСтоимости</Name>
+						<Code>00159</Code>
+						<Description>16.1. (16.1.1) - согласно ст. 192 НК (возвраты) был начислен кредит (до 01.12.14 - 16.1. (до 01.03.11 - 16.2. согласно п.4.5 ст. 4 Закона)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a9b3e61f-0469-4eb6-9fe8-80c1352ce233">
+						<Name>НДС_НКИзменениеСтоимостиБезНК</Name>
+						<Code>00553</Code>
+						<Description>16.1.2. (16.1.3.) согласно ст. 192 НК (возвраты) приобретенных с НДС для освобожденной или необл. деятельности</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d9d93fa6-b0dc-4244-b810-f383c2f44936">
+						<Name>НДС_НККорректировкаБезНК</Name>
+						<Code>00161</Code>
+						<Description>16.1.4. согласно ст. 192 НК (возвраты) приобретенных без НДС (до 01.12.14 - 16.1.1. (до 01.03.11 - 16.x. корректировки без права включения в налоговый</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="086d453c-c009-48ad-ab18-090460b791e7">
+								<Name>НДС_НККорректировкаБезНКНеХоз</Name>
+								<Code>00552</Code>
+								<Description>(из 16.1.4.) возвраты прибретенных для нехоз. деятельности (до 01.12.14 - 16.1.4. возвраты приобретенных с НДС для освобожденной или необл. деятельнос</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="0c833654-d53d-4650-994c-8650d58c6bb7">
+								<Name>НДС_НККорректировкаБезНКДляУслугВнеУкраины</Name>
+								<Code>00554</Code>
+								<Description>(из 16.1.4.) возвраты прибретенных для поставки услуг за пределами Украины</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="f42bdcd4-9017-4bbd-929e-99700f5bc134">
+						<Name>НДС_НККорректировкаПропорциональноВклВКредит</Name>
+						<Code>00307</Code>
+						<Description>16.1.5. согласно ст. 192 НК (возвраты) кредит начислялся частично (ст. декларации 15.1) (до 01.12.14 - 16.1.2.)</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="c0828ede-52a0-408d-b517-5bf11a2d9d47">
+								<Name>НДС_НККорректировкаПропорциональноВклВКредитПоставкаОФ</Name>
+								<Code>00313</Code>
+								<Description>(из 16.1.5.) Приобретение (стр-во) ОФ: согласно ст. 192 НК (возвраты) кредит начислялся частично (ст. декларации 15.1) (до 01.12.14 - из 16.1.2.)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="f5fa9c6c-00d8-4564-a6c5-67d331b07429">
+						<Name>НДС_НККорректировкаПропорциональноНеВклВКредит</Name>
+						<Code>00308</Code>
+						<Description>16.1.6. согласно ст. 192 НК (возвраты) кредит НЕ начислялся частично (ст. декларации 15.2) (до 01.12.14 - 16.1.3.)</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="4720128a-1e3a-4cb7-931a-3310a538c908">
+								<Name>НДС_НККорректировкаПропорциональноНеВклВКредитПоставкаОФ</Name>
+								<Code>00314</Code>
+								<Description>(из 16.1.6.) Приобретение (стр-во) ОФ: согласно ст. 192 НК (возвраты) кредит НЕ начислялся частично (ст. декларации 15.2) (до 01.12.14 - из 16.1.3)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="637a63ea-ddf9-489c-9e72-93cede76541a">
+						<Name>НДС_НККорректировкаВосстановлениеКредита</Name>
+						<Code>00549</Code>
+						<Description>16.5. Использование товаров, суммы НДС при приобретерии которых не относились на кредит, в облагаемых операциях</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4188ff1f-5426-4e79-9c27-f32002f68040">
+						<Name>НДС_НККорректировкаВосстановлениеКредитаПропорциональноВклВКредит</Name>
+						<Code>00550</Code>
+						<Description>16.6.1 Использование товаров, суммы НДС при приобретерии которых не относились на кредит, в пропорциональном НДС: часть, которая включается в кредит</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="76cf8fd4-9bd5-4e84-aff9-49a1af90e337">
+						<Name>НДС_НККорректировкаВосстановлениеКредитаПропорциональноНеВклВКредит</Name>
+						<Code>00551</Code>
+						<Description>16.6.2 Использование товаров, суммы НДС при приобретерии которых не относились на кредит, в пропорциональном НДС: часть,которая НЕ включается в кредит</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="40b0c066-36ad-488c-ac63-0f9068c94744">
+						<Name>НДС_НККорректировкаТрансфЦенообразование</Name>
+						<Code>00555</Code>
+						<Description>16.7. Корректировка кредита по ст. 39 НКУ (трансфертное ценообразование)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="34beea82-a71c-402c-a934-68a62fa5b0b0">
+				<Name>НДС_НОПоСтавке0Экспорт</Name>
+				<Code>00164</Code>
+				<Description>2.1. Экспортные операции по ставке 0%</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="80dd7a97-4329-4232-a562-7b25ddfb7ee9">
+				<Name>НДС_НОПоСтавке0Другие</Name>
+				<Code>00167</Code>
+				<Description>2.2. Другие операции по ставке 0%</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2b28c118-24a5-470b-b1fc-6247551b8326">
+				<Name>НДС_ИзмененОстатокОтрицЗначенияПроверка</Name>
+				<Code>00310</Code>
+				<Description>21.3. Увеличено/уменьшено остаток отрицательного значения по результатам проверки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3729d87a-40ee-4419-913f-8cf3384587fa">
+				<Name>НДС_НОНеОбъектНалог</Name>
+				<Code>00170</Code>
+				<Description>3. Операции, не являющиеся объектом налогообложения</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="d5b54a63-60d4-45dd-859f-65d03895e0d7">
+						<Name>НДС_НОУслугиВнеУкраины</Name>
+						<Code>00179</Code>
+						<Description>4. Поставка услуг за пределы таможенной территории Украины ( до 01.03.11 - п. 9')</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f66dcbc2-de12-472c-8502-f0d23af02f61">
+						<Name>НДС_НООсвобожден</Name>
+						<Code>00171</Code>
+						<Description>5. Операции, освобожденные от налогообложения (до 01.03.11 - п.4)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="bec69fff-d6b2-4462-b205-b83585d5e458">
+				<Name>НДС_НОНерезидентУслуги</Name>
+				<Code>00173</Code>
+				<Description>7. Услуги, полученные от нерезидента</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0ec22589-609c-4c61-b88d-15ab27e396a4">
+				<Name>НДС_НОКорректировка_</Name>
+				<Code>00174</Code>
+				<Description>8. Корректировка обязательств --&gt;</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="98730ad9-f8bb-4cfc-850a-0b8299ea1157">
+						<Name>НДС_НОИзменениеСтоимости</Name>
+						<Code>00177</Code>
+						<Description>8.1.(8.1.1) - корректировка согласно ст. 192 НК (возвраты) (до 01.03.11 - 8.3. согласно п.4.5 ст.4 Закона)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="9c3118db-ec0a-4fa8-b627-5f23bd252208">
+						<Name>НДС_НОКорректировкаТрансфЦенообразование</Name>
+						<Code>00556</Code>
+						<Description>8.3. Корректировка обязательств по ст. 39 НКУ (трансфертное ценообразование)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="bad3ff41-03cc-4a20-aaf7-649f7577cc58">
+				<Name>НДС_Штраф</Name>
+				<Code>00169</Code>
+				<Description>Не используется (до 01.03.11 - 28. Сумма штрафа, самостоятельно начисленная плательщиком налога)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a4e08a80-bd0d-4a1c-8b3b-7e0caf97d033">
+				<Name>НДС_НОИмпортВексель</Name>
+				<Code>00172</Code>
+				<Description>Не используется (до 01.03.11 - 6. Импорт товаров с оформлением налогового векселя)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0acf0f2f-75e7-4cd1-907b-ab4f0be84fd2">
+				<Name>НДС_БюджКорректировка_</Name>
+				<Code>00162</Code>
+				<Description>Не используется (до 01.06.05 - 19. Корректировка платежей в бюджет с учетом векселей)</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="567f4a07-3c89-4c3d-97be-f23767a28cfd">
+						<Name>НДС_БюджКорректировкаВексельПогашенный</Name>
+						<Code>00163</Code>
+						<Description>Не используется (до 01.06.05 - 19.2. Векселя со сроком погашения в текущем отчетном периоде)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="b6d78aa0-100f-471a-a60d-145eccba4e80">
+				<Name>НДС_БюджПолучВСчетВозвратаИзГосбюджета</Name>
+				<Code>00181</Code>
+				<Description>Не используется (до 01.06.05 - 22. Получено в счет централизованного возврата из Госбюджета)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="59be958d-56cb-4ea6-9b67-1b6594f9953b">
+				<Name>НДС_ЗачетОтрицатЗначВУменьшНалогДолга</Name>
+				<Code>00168</Code>
+				<Description>Не используется (до 01.06.05 - 22.2 Зачет отрицательного значения разности в уменьш. суммы налог. долга)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c4e30cc4-2dde-45b7-a1d4-3c975917eaf0">
+				<Name>НДС_БюджШтрафПеня_</Name>
+				<Code>00182</Code>
+				<Description>Не используется (до 01.06.05 - 26. Суммы штрафов и пени, самостоятельно начисленных плательщиком)</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="95f28e7d-b7ef-4ee6-a60d-f5d7f56ee78c">
+						<Name>НДС_БюджШтраф</Name>
+						<Code>00183</Code>
+						<Description>Не используется (до 01.06.05 - 26.1. Сумма штрафа)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="ec2be412-d757-4252-a349-8f342ef7fb7e">
+						<Name>НДС_БюджПеня</Name>
+						<Code>00184</Code>
+						<Description>Не используется (до 01.06.05 - 26.2. Пеня по операциям, указанным в строке 8.2)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="438c5dc3-e163-4813-9c48-7b49fd2156b0">
+				<Name>НДС_НКПокупкаСНДСвВРОблагКомиссия</Name>
+				<Code>00265</Code>
+				<Description>Не используется (до 01.03.11 - Проведение расчетов комиссионером (для прил. 5))</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c89fe77c-6dc5-468a-8ef0-1c15a48e9981">
+				<Name>НДС_НКПокупкаСНДСнеВРДляУслугВнеУкраины</Name>
+				<Code>00148</Code>
+				<Description>Не используется (до 01.03.11 - 14.x. Приобретение с НДС товаров/ОС, НМА для поставки услуг за пределами Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d5a52472-c38b-47b2-8de7-260f5279b81c">
+				<Name>НДС_НКПокупкаСНДСнеВРнаУкраине</Name>
+				<Code>00149</Code>
+				<Description>Не используется (до 01.06.05 - 14.1. на таможенной территории Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7e79096d-2141-4836-95da-0fd243ed5c4d">
+				<Name>НДС_НКПокупкаСНДСнеВРИмпорт</Name>
+				<Code>00150</Code>
+				<Description>Не используется (до 01.06.05 - 14.2. ввезенные из-за границ таможенной территории Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a1bc198c-2efa-4fd9-ab63-f387e6280959">
+				<Name>НДС_НКПокупкаСНДСнеВРУслугиНерезидента</Name>
+				<Code>00151</Code>
+				<Description>Не используется (до 01.06.05 - 14.3. работы (услуги), полученные от нерезидента)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e4755238-3e2d-451f-9102-46d678050bcc">
+				<Name>НДС_НКПокупкаБезНДСнеВРДляУслугВнеУкраины</Name>
+				<Code>00153</Code>
+				<Description>Не используется (до 01.03.11 - 15.x. Приобретение без НДС товаров/ОС, НМА для поставки услуг за пределами Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c79dc383-0c90-460e-aabe-207811601f4d">
+				<Name>НДС_НКПокупкаБезНДСнеВРнаУкраине</Name>
+				<Code>00154</Code>
+				<Description>Не используется (до 01.06.05 - 15.1. на таможенной территории Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="167836a3-d635-491f-abf0-bc436b736450">
+				<Name>НДС_НКПокупкаБезНДСнеВРИмпорт</Name>
+				<Code>00155</Code>
+				<Description>Не используется (до 01.06.05 - 15.2. ввезенные (пересланные) из-за границ таможенной территории Украины)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="341d602d-64d5-44fb-8510-b008d7da5e68">
+				<Name>НДС_НКПокупкаБезНДСнеВРУслугиНерезидента</Name>
+				<Code>00156</Code>
+				<Description>Не используется (до 01.06.05 - 15.3. работы (услуги), полученные от нерезидента)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7de3c059-0f96-4c9e-86df-b6b52966e071">
+				<Name>НДС_НКИмпортВРОблагВексель</Name>
+				<Code>00132</Code>
+				<Description>12.2. погашенные налоговые вексели (для предприятий судостроения) (до 01.03.2011 - дающие право на увеличение налогового кредита)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="dd2e97f9-cb62-4dd2-a8aa-2e717861cd60">
+				<Name>НДС_НКИмпортВРОблагУслугиНерезидента</Name>
+				<Code>00134</Code>
+				<Description>12.4. работы (услуги), полученные от нерезидента</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="b6f8a60e-b68a-4991-8539-823c7629c7c8">
+						<Name>НДС_НКИмпортВРНеОблагНеОбъектУслугиНерезидента</Name>
+						<Code>00141</Code>
+						<Description>13.3. услуги нерезидента (до 01.06.05 - 13.1.3. ... для операций, не подлежащих налогообложению)</Description>
+						<IsFolder>false</IsFolder>
+						<ChildItems>
+							<Item id="3d2d1558-6706-413b-bede-a6054494d93d">
+								<Name>НДС_НКИмпортВРНеОблагНеОбъектУслугиНерезидентаУслугВнеУкраины</Name>
+								<Code>00301</Code>
+								<Description>(из 13.3.) для услуг за пределами Украины</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="b1961195-9557-4890-bdb1-628a506836d6">
+				<Name>НДС_НКИмпортВРНеОблагОсвобожден_</Name>
+				<Code>00142</Code>
+				<Description>Не используется (До 01.06.05 - 13.2. из строки 13 - для осуществления операций, освобожденных от налогообложения</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="8b2b5667-d1ac-4401-a53d-277273f3dc7b">
+						<Name>НДС_НКИмпортВРНеОблагОсвобожденНДСТамож</Name>
+						<Code>00143</Code>
+						<Description>Не используется (до 01.03.11 - 13.1.(13.2.1) НДС, уплаченный таможенным органам (до 01.06.05 - 13.2.1. ... для операций, освобожденных)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="f2d81d5b-eec1-447e-b821-b26186da1a72">
+						<Name>НДС_НКИмпортВРНеОблагОсвобожденОплачВексель</Name>
+						<Code>00144</Code>
+						<Description>Не используется (до 01.03.11 - 13.1.x оплачено векселем (до 01.06.05 - 13.2.х. оплачено векселем)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8e6eea62-97ee-4df1-965a-fe59a2878287">
+						<Name>НДС_НКИмпортВРНеОблагОсвобожденБезНДС</Name>
+						<Code>00145</Code>
+						<Description>Не используется (до 01.03.11 - 13.2.(13.2.2) освобожденные от НДС (до 01.06.05 - 13.2.2. ... для операций, освобожденных от налогообложения)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4495a9be-3d45-4348-8909-b0d6d212b855">
+						<Name>НДС_НКИмпортВРНеОблагОсвобожденУслугиНерезидента</Name>
+						<Code>00146</Code>
+						<Description>Не используется (до 01.03.11 - 13.3.(13.2.3) услуги нерезидента (до 01.06.05 - 13.2.3. ... для операций, освобожденных от налогообложения)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="37be022d-4ca5-4abd-bcd7-5d71cdf4cfd1">
+				<Name>НДС_ВвозЛьгИспНеПоНазнач</Name>
+				<Code>00135</Code>
+				<Description>Не используется (до 01.03.11 - 12.5. товары, ввезенные в льготном режиме и использованные не по назначению)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fc53df28-81a7-4e93-83ea-83b0433c4f82">
+				<Name>НДС_НКИмпортВРНеОблагНеОбъектНДСОплачВексель</Name>
+				<Code>00139</Code>
+				<Description>Не используется (до 01.06.05 - 13.1.х. оплачено векселем)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="16df5deb-5772-46ec-b7be-3f0c78c23d2f">
+				<Name>НДС_НККорректировкаПропорциональноПерерасчет</Name>
+				<Code>00309</Code>
+				<Description>16.4. Перерасчет кредита в связи с перерасчетом части использования в облагаемых операциях</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2c236f2a-6063-471a-927b-7705e976869b">
+				<Name>НДС_НККорректировкаСамостОшибки</Name>
+				<Code>00158</Code>
+				<Description>Не используется (до 01.03.11 - 16.1. самостоятельное исправление ошибки в декларации)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ec704a3f-9501-43f5-8f08-e4939e40d60b">
+				<Name>НДС_НККорректировкаПрочее</Name>
+				<Code>00160</Code>
+				<Description>Не используется (до 01.03.11 - 16.4. прочие случаи (до 10.02.09  16.3. прочие случаи, до 01.06.05 - 16.2. прочие случаи))</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="29526d52-ab44-41d0-928b-ba023d3a5cbd">
+				<Name>НДС_НККорректировкаЧастИспользВСХ</Name>
+				<Code>00283</Code>
+				<Description>16.2. частичное использование в операциях  сельхоз. производства (-) (до 01.03.11 - 16.3)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c273de8b-1272-46a7-b09e-3e446dbf21b0">
+				<Name>НДС_НОПоСтавке0ЭкспортБартер</Name>
+				<Code>00165</Code>
+				<Description>Не используется (до 01.06.05 - 2.1.1. из строки 2.1. - товарообменные (бартерные) операции)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6be6fb7f-1d1d-4456-8ad5-e1e1712a538e">
+				<Name>НДС_НОПоСтавке0ЭкспортУслуги</Name>
+				<Code>00166</Code>
+				<Description>Не используется (до 01.06.05 - 2.1.2. из строки 2.1. - экспорт работ (услуг))</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e34de49b-90fb-4cef-bdb0-13324ea6679a">
+				<Name>НДС_НОКорректировкаСамостОшибки</Name>
+				<Code>00175</Code>
+				<Description>Не используется (до 01.03.11 - 8.1. самостоятельное исправление ошибки в декларации)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5c956ccd-b1e2-42e8-91c5-1fb62378c235">
+				<Name>НДС_НОКорректировкаПрочее</Name>
+				<Code>00178</Code>
+				<Description>Не используется (до 01.03.11 - 8.4. прочие случаи (до 01.06.05 - 8.3. прочие случаи)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5a83835d-ef11-4518-9147-710c59cf5ab3">
+				<Name>НДС_НОКорректировкаНецелевоеИсп</Name>
+				<Code>00176</Code>
+				<Description>8.2. нецелевое использование товаров, ввезенных в льготном режиме</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3001a900-7945-42a3-8b20-95c314ab7138">
+				<Name>НДС_НОПоСтавке20Комиссия</Name>
+				<Code>00263</Code>
+				<Description>Не используется (до 01.03.11 Передача товаров комиссионером (для прил. 5). В налоговой накладной не используется!</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0d9fbac2-a1a3-42bb-98de-692d4a5d6042">
+				<Name>НДС_НОПоСтавке20НепроизвИсп</Name>
+				<Code>00121</Code>
+				<Description>Не используется (до 01.06.05 - 1.1. Передача товаров для непроизводственного использования)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d675abbe-6a70-4080-9e90-43e37b2f5efd">
+				<Name>НДС_НОПоСтавке20ЛиквидОФ</Name>
+				<Code>00122</Code>
+				<Description>Не используется (до 01.06.05 - 1.2. Ликвидация ОФ по решению налогоплательщика)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5a945044-ef60-4c22-a7eb-011d2cc5f330">
+				<Name>НДС_НОПоСтавке20Бартер</Name>
+				<Code>00123</Code>
+				<Description>Не используется (до 01.06.05 - 1.х. Бартерные операции по ставке 20%)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a2132cc7-a281-49c3-a88b-bcc08ecf89a3">
+		<Name>ЕН_</Name>
+		<Code>00235</Code>
+		<Description>Отчет по Единому налогу (не используется с 01.01.2012 р.)</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="c53735d9-f1ff-4b09-8630-0133e6e4cdb2">
+				<Name>ЕН_РеализацияОС</Name>
+				<Code>00237</Code>
+				<Description>Выручка от реализации основных фондов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="49aee0fa-4857-427d-9ca0-38d225f17d81">
+				<Name>ЕН_Реализация</Name>
+				<Code>00238</Code>
+				<Description>Выручка от реализации продукции (товаров, работ, услуг)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a0fccfa5-b24a-4054-a144-c170060f1f06">
+				<Name>ЕН_Затраты</Name>
+				<Code>00239</Code>
+				<Description>Затраты, в связи с хозяйственной деятельностью</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="53d0f4ec-9e7b-446c-b460-7b5b35756dfa">
+				<Name>ЕН_ВнереализационныеДоходы</Name>
+				<Code>00236</Code>
+				<Description>Необлагаемые внереализационные доходы и выручка от другой реализации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4a9b63c5-ae65-48a7-8615-d62bd1cfd7a9">
+				<Name>ЕН_ВнереализационныеДоходыОблагаемые</Name>
+				<Code>00266</Code>
+				<Description>Облагаемые внереализационные доходы и выручка от другой реализации</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>
