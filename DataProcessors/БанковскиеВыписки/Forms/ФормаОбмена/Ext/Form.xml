@@ -80,7 +80,7 @@
 			<Button name="ФормаИзменитьОрганизациюПлатежа" id="145">
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
-				<CommandName>Form.Command.ВыделитьРасхождения</CommandName>
+				<CommandName>Form.Command.ИзменитьОрганизациюПлатежа</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -100,6 +100,18 @@
 					</v8:item>
 				</Title>
 				<ExtendedTooltip name="ФормаИзменитьСчетПлатежаРасширеннаяПодсказка" id="151"/>
+			</Button>
+			<Button name="ФормаНастройки" id="200">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.Настройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Настройки</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="201"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -128,6 +140,43 @@
 					<DataPath>Объект.Подразделение</DataPath>
 					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="19"/>
 					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="20"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="202">
+			<Visible>false</Visible>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>true</ShowTitle>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период регламентной загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="203"/>
+			<ChildItems>
+				<LabelField name="ПодсказкаНастроек" id="204">
+					<DataPath>ПодсказкаНастроек</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ПодсказкаНастроекКонтекстноеМеню" id="205"/>
+					<ExtendedTooltip name="ПодсказкаНастроекРасширеннаяПодсказка" id="206"/>
+				</LabelField>
+				<InputField name="НачалоПериодаРучное" id="207">
+					<DataPath>НачалоПериодаРучное</DataPath>
+					<ContextMenu name="НачалоПериодаРучноеКонтекстноеМеню" id="208"/>
+					<ExtendedTooltip name="НачалоПериодаРучноеРасширеннаяПодсказка" id="209"/>
+					<Events>
+						<Event name="OnChange">НачалоПериодаРучноеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НачалоПериодаАвтоматическое" id="210">
+					<DataPath>НачалоПериодаАвтоматическое</DataPath>
+					<ContextMenu name="НачалоПериодаАвтоматическоеКонтекстноеМеню" id="211"/>
+					<ExtendedTooltip name="НачалоПериодаАвтоматическоеРасширеннаяПодсказка" id="212"/>
+					<Events>
+						<Event name="OnChange">НачалоПериодаАвтоматическоеПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -523,6 +572,43 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="НачалоПериодаРучное" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Грузить с даты (вручную)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалоПериодаАвтоматическое" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодсказкаНастроек" id="12">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПолучитьВыписку" id="1">
@@ -603,7 +689,7 @@
 			</ToolTip>
 			<Action>ИзменитьДатуПлатежа</Action>
 		</Command>
-		<Command name="ИзменитьОрганизациюПлатежа" id="6">
+		<Command name="ИзменитьОрганизациюПлатежа" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -632,6 +718,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ИзменитьСчетПлатежа</Action>
+		</Command>
+		<Command name="Настройки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать или скрыть период, с которого грузит регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
 		</Command>
 	</Commands>
 </Form>
