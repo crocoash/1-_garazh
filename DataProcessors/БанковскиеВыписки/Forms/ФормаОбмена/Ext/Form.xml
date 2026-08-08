@@ -248,7 +248,6 @@
 			<ChildItems>
 				<CheckBoxField name="ДокументыКИмпортуПозначено" id="158">
 					<DataPath>Объект.ДокументыКИмпорту.Позначено</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -261,6 +260,7 @@
 							<v8:content>Посчитать строку в итоге внизу</v8:content>
 						</v8:item>
 					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ДокументыКИмпортуПозначеноКонтекстноеМеню" id="159"/>
 					<ExtendedTooltip name="ДокументыКИмпортуПозначеноРасширеннаяПодсказка" id="160"/>
 					<Events>
