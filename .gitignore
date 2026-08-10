@@ -8,6 +8,8 @@
 !/_tools/update-base.ps1
 !/_tools/update-base.cmd
 !/_tools/make-shortcut.ps1
+!/_tools/merge-cf.ps1
+!/_tools/merge-settings.txt
 !/_tools/ШтрихкодыВМакетах.md
 
 # Служебные файлы Claude Code
