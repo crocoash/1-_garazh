@@ -59,8 +59,35 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location $root
 
-$git = "C:\Program Files\Git\cmd\git.exe"
-if (-not (Test-Path $git)) { $git = "git" }
+# Git ищем сами: в PATH его может не быть. На машине с 1С он приезжает вместе
+# с клиентом Fork, а в том пути стоит номер версии, который Fork меняет при
+# обновлении — поэтому берём самую свежую папку gitInstance, а не фиксированный путь.
+function НайтиGit {
+
+    $варианты = @(
+        "$env:ProgramFiles\Git\cmd\git.exe"
+        "${env:ProgramFiles(x86)}\Git\cmd\git.exe"
+    )
+    foreach ($путь in $варианты) {
+        if ($путь -and (Test-Path $путь)) { return $путь }
+    }
+
+    if ($env:LOCALAPPDATA) {
+        $fork = Join-Path $env:LOCALAPPDATA "Fork\gitInstance"
+        if (Test-Path $fork) {
+            $свежий = Get-ChildItem $fork -Directory -ErrorAction SilentlyContinue |
+                Where-Object { Test-Path (Join-Path $_.FullName "cmd\git.exe") } |
+                Sort-Object { try { [version]$_.Name } catch { [version]"0.0" } } |
+                Select-Object -Last 1
+            if ($свежий) { return (Join-Path $свежий.FullName "cmd\git.exe") }
+        }
+    }
+
+    if (Get-Command git -ErrorAction SilentlyContinue) { return "git" }
+    return $null
+}
+
+$git = НайтиGit
 
 $шелл = (Get-Process -Id $PID).Path
 if (-not $шелл) { $шелл = "powershell" }
@@ -87,6 +114,10 @@ function ПрочитатьЛог($путь) {
         $текст = [System.IO.File]::ReadAllText($путь, [System.Text.Encoding]::Default)
     }
     return $текст.Trim()
+}
+
+if (-not $git) {
+    Отказ "Не найден git. Установить: https://git-scm.com/download/win (или запускать с -БезPull, положив файлы вручную)."
 }
 
 # --- Платформа ---------------------------------------------------------------
