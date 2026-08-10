@@ -7,12 +7,15 @@
 
 param(
     [string]$Имя = "Обновить базу из GitHub",
-    [string]$Аргументы = ""
+    [string]$Аргументы = "",
+    # Какой .cmd запускает ярлык: update-base.cmd (только тестовая база)
+    # или deploy.cmd (тестовая + объединение с рабочей).
+    [string]$Файл = "update-base.cmd"
 )
 
 $ErrorActionPreference = "Stop"
 
-$цель = Join-Path $PSScriptRoot "update-base.cmd"
+$цель = Join-Path $PSScriptRoot $Файл
 if (-not (Test-Path $цель)) {
     Write-Host "Не найден $цель — сделайте git pull." -ForegroundColor Red
     exit 1
