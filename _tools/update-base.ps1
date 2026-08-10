@@ -330,6 +330,17 @@ if (Test-Path $времCf) { Remove-Item $времCf -Force }
 
 if (-not (Test-Path $времCf)) { Отказ "Конфигуратор отработал, но файл не появился: $времCf" }
 
+# Move-Item -Force в Windows PowerShell 5.1 существующий файл НЕ перезаписывает,
+# а падает с «Cannot create a file when that file already exists» — сносим сами.
+# Выгрузка на этот момент уже завершилась успешно, так что прежний .cf не жалко.
+if (Test-Path $ФайлCf) {
+    try {
+        Remove-Item $ФайлCf -Force
+    } catch {
+        Отказ "Не удалось заменить $ФайлCf — файл занят (открыт в 1С или в другой программе?). Готовая выгрузка лежит рядом: $времCf"
+    }
+}
+
 Move-Item -Path $времCf -Destination $ФайлCf -Force
 
 $размер = [math]::Round((Get-Item $ФайлCf).Length / 1MB, 1)
