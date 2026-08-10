@@ -59,6 +59,13 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location $root
 
+# Консоль на этой машине в cp866, а git и логи Конфигуратора пишут UTF-8 —
+# без этого русские сообщения выводятся кракозябрами.
+try {
+    [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+    $OutputEncoding = [System.Text.Encoding]::UTF8
+} catch { }
+
 # Git ищем сами: в PATH его может не быть. На машине с 1С он приезжает вместе
 # с клиентом Fork, а в том пути стоит номер версии, который Fork меняет при
 # обновлении — поэтому берём самую свежую папку gitInstance, а не фиксированный путь.
@@ -225,14 +232,30 @@ if ($ПропуститьПроверкуШтрихкодов) {
 $логи = Join-Path $env:TEMP "1c-update-base"
 if (-not (Test-Path $логи)) { New-Item -ItemType Directory -Path $логи | Out-Null }
 
+# Start-Process склеивает массив аргументов через пробел и НИЧЕГО не экранирует:
+# имя пользователя «Антон Цветков» или путь с пробелом уедут в 1С как два
+# аргумента, и Конфигуратор ответит «Користувач ІБ не ідентифікований».
+# Поэтому кавычим сами — и пустые значения тоже, иначе аргумент просто исчезает.
+function ВКавычки($значение) {
+    if ($null -eq $значение) { return '""' }
+    $строка = [string]$значение
+    if ($строка -eq "" -or $строка -match '\s') { return '"' + $строка + '"' }
+    return $строка
+}
+
 function ЗапуститьКонфигуратор($имяШага, $аргументы) {
 
     $лог = Join-Path $логи "$имяШага.log"
     if (Test-Path $лог) { Remove-Item $лог -Force }
 
+    # «/S app1\garazh-cp» — это два аргумента, ключ и значение: кавычить целиком
+    # нельзя, 1С такой ключ не разберёт.
+    # (имя переменной другое не для красоты: в PowerShell $база и $База — одно и то же)
+    $частиБазы = $База.Trim() -split '\s+', 2
+
     $общие = @(
         "DESIGNER"
-        $База
+        $частиБазы
         "/N", $Пользователь
         "/P", $Пароль
         "/DisableStartupDialogs"
@@ -240,8 +263,10 @@ function ЗапуститьКонфигуратор($имяШага, $аргум
         "/Out", $лог, "-NoTruncate"
     )
 
+    $строкаАргументов = (($общие + $аргументы) | ForEach-Object { ВКавычки $_ }) -join " "
+
     $начало = Get-Date
-    $процесс = Start-Process -FilePath $Платформа -ArgumentList ($общие + $аргументы) -Wait -PassThru
+    $процесс = Start-Process -FilePath $Платформа -ArgumentList $строкаАргументов -Wait -PassThru
     $секунды = [int]((Get-Date) - $начало).TotalSeconds
 
     $текст = ПрочитатьЛог $лог
