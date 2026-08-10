@@ -5,6 +5,7 @@
 !/_tools/fix-barcodes.ps1
 !/_tools/barcode-object.txt
 !/_tools/snapshot.ps1
+!/_tools/update-base.ps1
 !/_tools/ШтрихкодыВМакетах.md
 
 # Служебные файлы Claude Code
