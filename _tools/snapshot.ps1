@@ -55,6 +55,19 @@ function НайтиGit {
     return $null
 }
 
+# git пишет часть нормального вывода в stderr («To github.com…», прогресс).
+# Windows PowerShell при $ErrorActionPreference = "Stop" считает это фатальной
+# ошибкой NativeCommandError и роняет скрипт на успешном push.
+function Гит {
+    $прежний = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $git @args 2>&1 | ForEach-Object { Write-Host "  $_" }
+    } finally {
+        $ErrorActionPreference = $прежний
+    }
+}
+
 $git = НайтиGit
 if (-not $git) {
     Write-Host "Не найден git. Установить: https://git-scm.com/download/win" -ForegroundColor Red
@@ -223,7 +236,7 @@ if ($чужие.Count -gt 0) {
 # Перенос на машину с 1С идёт через GitHub: без push снимок туда не попадёт.
 Write-Host ""
 $ветка = (& $git rev-parse --abbrev-ref HEAD).Trim()
-& $git push origin $ветка 2>&1 | Write-Host
+Гит push origin $ветка
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Отправлено на origin/$ветка — можно делать pull на машине с 1С." -ForegroundColor Green
 } else {

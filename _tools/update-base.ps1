@@ -96,6 +96,20 @@ function НайтиGit {
 
 $git = НайтиGit
 
+# git пишет часть совершенно нормального вывода в stderr («From github.com…»,
+# прогресс). Windows PowerShell при $ErrorActionPreference = "Stop" считает это
+# фатальной ошибкой NativeCommandError и роняет скрипт на успешном pull.
+# Поэтому шумные команды git зовём через эту обёртку.
+function Гит {
+    $прежний = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $git @args 2>&1 | ForEach-Object { Write-Host "  $_" }
+    } finally {
+        $ErrorActionPreference = $прежний
+    }
+}
+
 $шелл = (Get-Process -Id $PID).Path
 if (-not $шелл) { $шелл = "powershell" }
 
@@ -176,7 +190,7 @@ if ($БезPull) {
 
     $былоНа = (& $git rev-parse HEAD).Trim()
 
-    & $git pull --ff-only 2>&1 | Write-Host
+    Гит pull --ff-only
     if ($LASTEXITCODE -ne 0) {
         Отказ "git pull не прошёл (см. выше). Разобрать вручную."
     }
