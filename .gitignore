@@ -11,6 +11,7 @@
 !/_tools/merge-cf.ps1
 !/_tools/deploy.ps1
 !/_tools/deploy.cmd
+!/_tools/Обновить базу.cmd
 !/_tools/merge-settings.txt
 !/_tools/ШтрихкодыВМакетах.md
 
