@@ -392,6 +392,49 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
+			<URLTemplate uuid="55ad8904-60ac-4eec-9a82-aebe03e47043">
+				<Properties>
+					<Name>ДанныеБазы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные базы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Служебное чтение данных базы снаружи: query, meta, edit. Защита - токен, разбор в общем модуле КомандыБазыСнаружи.</Comment>
+					<Template>/db/cmd</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="3a2a0e84-089f-4e0a-922f-283d3df3687e">
+						<Properties>
+							<Name>DbCmdPost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Db cmd post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>DbCmdPost</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="30839f47-5f46-449d-972a-f3e9b2577619">
+						<Properties>
+							<Name>DbCmdGet</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Db cmd get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>DbCmdGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
 		</ChildObjects>
 	</HTTPService>
 </MetaDataObject>
