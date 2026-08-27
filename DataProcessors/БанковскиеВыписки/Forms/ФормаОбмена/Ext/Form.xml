@@ -145,15 +145,13 @@
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройки" id="202">
 			<Visible>false</Visible>
-			<Group>Vertical</Group>
-			<Representation>WeakSeparation</Representation>
-			<ShowTitle>true</ShowTitle>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Период регламентной загрузки</v8:content>
 				</v8:item>
 			</Title>
+			<Group>Vertical</Group>
 			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="203"/>
 			<ChildItems>
 				<LabelField name="ПодсказкаНастроек" id="204">
