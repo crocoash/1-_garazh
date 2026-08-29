@@ -18965,8 +18965,8 @@
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаЗадачи" id="db33d6dd-6856-4d4c-b1cf-576eda19ca7f" configVersion="1878828292ec21409274e644477ebce900000000"/>
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаЗадачи.Form" id="db33d6dd-6856-4d4c-b1cf-576eda19ca7f.0" configVersion="1f7ad6629e328f46ba67a7606c10c7a000000000"/>
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаЗадачи.Help" id="db33d6dd-6856-4d4c-b1cf-576eda19ca7f.1" configVersion="b7ca8e55418c434b83a91749030c49bd00000000"/>
-		<Metadata name="Task.ЗадачиПользователя.Form.ФормаОповещенияОЗадачах" id="e380184a-f7cc-47b6-9be6-dc1f3eaf96d1" configVersion="89cc5afe3dffe542b15db28dbdb2b01800000000"/>
-		<Metadata name="Task.ЗадачиПользователя.Form.ФормаОповещенияОЗадачах.Form" id="e380184a-f7cc-47b6-9be6-dc1f3eaf96d1.0" configVersion="9b38999563c16a44904bb54c2543634f00000000"/>
+		<Metadata name="Task.ЗадачиПользователя.Form.ФормаОповещенияОЗадачах" id="e380184a-f7cc-47b6-9be6-dc1f3eaf96d1" configVersion="4d66f42dfd965f41bf878233ccdcc83900000000"/>
+		<Metadata name="Task.ЗадачиПользователя.Form.ФормаОповещенияОЗадачах.Form" id="e380184a-f7cc-47b6-9be6-dc1f3eaf96d1.0" configVersion="6569bb6e49115b43a2a034fea6b8af3400000000"/>
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаОповещенияОЗадачах.Help" id="e380184a-f7cc-47b6-9be6-dc1f3eaf96d1.1" configVersion="fdc9309c5245154bbfb1d50aa82da79a00000000"/>
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаСписка" id="e353988d-15a0-450f-bd5d-deab7fda0617" configVersion="966c56c18ea25a4bad9f49a4632ba37900000000"/>
 		<Metadata name="Task.ЗадачиПользователя.Form.ФормаСписка.Form" id="e353988d-15a0-450f-bd5d-deab7fda0617.0" configVersion="22d5f140d07c064f82a987f7527e071a00000000"/>
