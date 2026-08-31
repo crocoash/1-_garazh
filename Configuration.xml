@@ -870,6 +870,7 @@
 			<CommonModule>ЧтениеДанныхБазы</CommonModule>
 			<CommonModule>ИзменениеСправочников</CommonModule>
 			<CommonModule>КомандыБазыСнаружи</CommonModule>
+			<CommonModule>ПисьмоПоставщикуПоЗаказу</CommonModule>
 			<ExchangePlan>ОбменССайтомЗаказами</ExchangePlan>
 			<ExchangePlan>ОбменССайтомТоварами</ExchangePlan>
 			<ExchangePlan>ОбменУправлениеТорговлейБухгалтерия</ExchangePlan>
