@@ -14,6 +14,9 @@
 !/_tools/Обновить базу.cmd
 !/_tools/merge-settings.txt
 !/_tools/ШтрихкодыВМакетах.md
+!/_tools/wait-deploy.ps1
+!/_tools/Слушать заливку.cmd
+!/_tools/deploy-result.log
 
 # Служебные файлы Claude Code
 /.claude/

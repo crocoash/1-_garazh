@@ -237,6 +237,20 @@ if ($чужие.Count -gt 0) {
 Write-Host ""
 $ветка = (& $git rev-parse --abbrev-ref HEAD).Trim()
 Гит push origin $ветка
+if ($LASTEXITCODE -ne 0) {
+    # Обычная причина — окно ожидания заливки на машине с 1С успело запушить
+    # свой отчёт (_tools/deploy-result.log). Он трогает один файл и с выгрузкой
+    # не пересекается, поэтому перед второй попыткой просто встаём поверх.
+    Write-Host "Push отклонён — origin ушёл вперёд, встаю поверх и пробую ещё раз." -ForegroundColor Yellow
+    Гит fetch origin $ветка
+    Гит rebase "origin/$ветка"
+    if ($LASTEXITCODE -eq 0) {
+        Гит push origin $ветка
+    } else {
+        Write-Host "Rebase не прошёл — разбирать вручную." -ForegroundColor Red
+        Гит rebase --abort
+    }
+}
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Отправлено на origin/$ветка — можно делать pull на машине с 1С." -ForegroundColor Green
 } else {
