@@ -262,6 +262,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеПотребностей.TabularSection.ВнутренниеЗаказы.Attribute.Заказ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЧекККМ.Attribute.ЧекККМПродажа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ОснованиеПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.БП_ЗаказПоставщику</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Экспедиторка.TabularSection.ДокументыТ.Attribute.Документ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Экспедиторка.TabularSection.ДокументыТ.Attribute.Основание</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаПоЭкспедиторке.Attribute.Экспедиторка</xr:Item>
