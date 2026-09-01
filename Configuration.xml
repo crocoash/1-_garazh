@@ -1967,6 +1967,7 @@
 			<InformationRegister>ИсторияНаименованийНоменклатуры</InformationRegister>
 			<InformationRegister>ЗаказыИнвойсовWayForPay</InformationRegister>
 			<InformationRegister>БП_ИсторияОтправкиСМСКод</InformationRegister>
+			<InformationRegister>ОтправленныеСообщения</InformationRegister>
 			<InformationRegister>БП_ОбменОбъектовССайтом</InformationRegister>
 			<InformationRegister>БП_БейджикиНоменклатуры</InformationRegister>
 			<InformationRegister>БП_РейтингНоменклатуры</InformationRegister>
