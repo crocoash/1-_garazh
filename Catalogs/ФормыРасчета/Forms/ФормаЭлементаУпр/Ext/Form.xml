@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаЗаписатьИЗакрыть" id="90">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
 				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
 				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="290"/>
 			</Button>
 			<Button name="ФормаЗаписать" id="91">
@@ -17,38 +18,62 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
-			<InputField name="Код" id="2">
-				<DataPath>Объект.Code</DataPath>
-				<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Код</v8:content></v8:item></Title>
-				<Width>20</Width>
-				<HorizontalStretch>false</HorizontalStretch>
-				<ContextMenu name="КодКонтекстноеМеню" id="102"/>
-				<ExtendedTooltip name="КодРасширеннаяПодсказка" id="202"/>
-			</InputField>
-			<InputField name="Наименование" id="3">
-				<DataPath>Объект.Description</DataPath>
-				<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Найменування</v8:content></v8:item></Title>
-				<ContextMenu name="НаименованиеКонтекстноеМеню" id="103"/>
-				<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="203"/>
-			</InputField>
-			<InputField name="Организация" id="4">
-				<DataPath>Объект.Организация</DataPath>
-				<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Організація</v8:content></v8:item></Title>
-				<ContextMenu name="ОрганизацияКонтекстноеМеню" id="104"/>
-				<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="204"/>
-			</InputField>
-			<InputField name="ОсновнойБанковскийСчет" id="5">
-				<DataPath>Объект.ОсновнойБанковскийСчет</DataPath>
-				<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Розрахунковий рахунок</v8:content></v8:item></Title>
-				<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="105"/>
-				<ExtendedTooltip name="ОсновнойБанковскийСчетРасширеннаяПодсказка" id="205"/>
-			</InputField>
+		<InputField name="Код" id="2">
+			<DataPath>Объект.Code</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</Title>
+			<Width>20</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="102"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="202"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найменування</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="103"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="203"/>
+		</InputField>
+		<InputField name="Организация" id="4">
+			<DataPath>Объект.Организация</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="104"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="204"/>
+		</InputField>
+		<InputField name="ОсновнойБанковскийСчет" id="5">
+			<DataPath>Объект.ОсновнойБанковскийСчет</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Розрахунковий рахунок</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="105"/>
+			<ExtendedTooltip name="ОсновнойБанковскийСчетРасширеннаяПодсказка" id="205"/>
+		</InputField>
 		<Pages name="ГруппаСтраницы" id="20">
-			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="220"/>
 			<ChildItems>
 				<Page name="СтраницаОрганизацииПоСумме" id="21">
-					<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Організації за сумою</v8:content></v8:item></Title>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Організації за сумою</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="СтраницаОрганизацииПоСуммеРасширеннаяПодсказка" id="221"/>
 					<ChildItems>
 						<Table name="ОрганизацииПоСумме" id="22">
@@ -58,22 +83,61 @@
 							<ContextMenu name="ОрганизацииПоСуммеКонтекстноеМеню" id="23"/>
 							<AutoCommandBar name="ОрганизацииПоСуммеКоманднаяПанель" id="24"/>
 							<ExtendedTooltip name="ОрганизацииПоСуммеРасширеннаяПодсказка" id="222"/>
+							<SearchStringAddition name="ОрганизацииПоСуммеСтрокаПоиска" id="292">
+								<AdditionSource>
+									<Item>ОрганизацииПоСумме</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОрганизацииПоСуммеСтрокаПоискаКонтекстноеМеню" id="293"/>
+								<ExtendedTooltip name="ОрганизацииПоСуммеСтрокаПоискаРасширеннаяПодсказка" id="294"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОрганизацииПоСуммеСостояниеПросмотра" id="295">
+								<AdditionSource>
+									<Item>ОрганизацииПоСумме</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОрганизацииПоСуммеСостояниеПросмотраКонтекстноеМеню" id="296"/>
+								<ExtendedTooltip name="ОрганизацииПоСуммеСостояниеПросмотраРасширеннаяПодсказка" id="297"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОрганизацииПоСуммеУправлениеПоиском" id="298">
+								<AdditionSource>
+									<Item>ОрганизацииПоСумме</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОрганизацииПоСуммеУправлениеПоискомКонтекстноеМеню" id="299"/>
+								<ExtendedTooltip name="ОрганизацииПоСуммеУправлениеПоискомРасширеннаяПодсказка" id="300"/>
+							</SearchControlAddition>
 							<ChildItems>
 								<InputField name="ОрганизацииПоСуммеСуммаДо" id="25">
 									<DataPath>Объект.ОрганизацииПоСумме.СуммаДо</DataPath>
-									<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Сума до</v8:content></v8:item></Title>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сума до</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОрганизацииПоСуммеСуммаДоКонтекстноеМеню" id="125"/>
 									<ExtendedTooltip name="ОрганизацииПоСуммеСуммаДоРасширеннаяПодсказка" id="225"/>
 								</InputField>
 								<InputField name="ОрганизацииПоСуммеОрганизация" id="26">
 									<DataPath>Объект.ОрганизацииПоСумме.Организация</DataPath>
-									<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Організація</v8:content></v8:item></Title>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Організація</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОрганизацииПоСуммеОрганизацияКонтекстноеМеню" id="126"/>
 									<ExtendedTooltip name="ОрганизацииПоСуммеОрганизацияРасширеннаяПодсказка" id="226"/>
 								</InputField>
 								<InputField name="ОрганизацииПоСуммеБанковскийСчет" id="27">
 									<DataPath>Объект.ОрганизацииПоСумме.БанковскийСчет</DataPath>
-									<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Розрахунковий рахунок</v8:content></v8:item></Title>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Розрахунковий рахунок</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОрганизацииПоСуммеБанковскийСчетКонтекстноеМеню" id="127"/>
 									<ExtendedTooltip name="ОрганизацииПоСуммеБанковскийСчетРасширеннаяПодсказка" id="227"/>
 								</InputField>
@@ -82,7 +146,12 @@
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаПодразделения" id="30">
-					<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Підрозділи</v8:content></v8:item></Title>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Підрозділи</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="СтраницаПодразделенияРасширеннаяПодсказка" id="230"/>
 					<ChildItems>
 						<Table name="СписокПодразделений" id="31">
@@ -92,10 +161,39 @@
 							<ContextMenu name="СписокПодразделенийКонтекстноеМеню" id="32"/>
 							<AutoCommandBar name="СписокПодразделенийКоманднаяПанель" id="33"/>
 							<ExtendedTooltip name="СписокПодразделенийРасширеннаяПодсказка" id="231"/>
+							<SearchStringAddition name="СписокПодразделенийСтрокаПоиска" id="301">
+								<AdditionSource>
+									<Item>СписокПодразделений</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПодразделенийСтрокаПоискаКонтекстноеМеню" id="302"/>
+								<ExtendedTooltip name="СписокПодразделенийСтрокаПоискаРасширеннаяПодсказка" id="303"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПодразделенийСостояниеПросмотра" id="304">
+								<AdditionSource>
+									<Item>СписокПодразделений</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПодразделенийСостояниеПросмотраКонтекстноеМеню" id="305"/>
+								<ExtendedTooltip name="СписокПодразделенийСостояниеПросмотраРасширеннаяПодсказка" id="306"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПодразделенийУправлениеПоиском" id="307">
+								<AdditionSource>
+									<Item>СписокПодразделений</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПодразделенийУправлениеПоискомКонтекстноеМеню" id="308"/>
+								<ExtendedTooltip name="СписокПодразделенийУправлениеПоискомРасширеннаяПодсказка" id="309"/>
+							</SearchControlAddition>
 							<ChildItems>
 								<InputField name="СписокПодразделенийПодразделение" id="34">
 									<DataPath>Объект.СписокПодразделений.Подразделение</DataPath>
-									<Title><v8:item><v8:lang>ru</v8:lang><v8:content>Підрозділ</v8:content></v8:item></Title>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Підрозділ</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="СписокПодразделенийПодразделениеКонтекстноеМеню" id="134"/>
 									<ExtendedTooltip name="СписокПодразделенийПодразделениеРасширеннаяПодсказка" id="234"/>
 								</InputField>
