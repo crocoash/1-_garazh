@@ -871,6 +871,7 @@
 			<CommonModule>ИзменениеСправочников</CommonModule>
 			<CommonModule>КомандыБазыСнаружи</CommonModule>
 			<CommonModule>ПисьмоПоставщикуПоЗаказу</CommonModule>
+			<CommonModule>СМСПоСтатусуНовойПочты</CommonModule>
 			<ExchangePlan>ОбменССайтомЗаказами</ExchangePlan>
 			<ExchangePlan>ОбменССайтомТоварами</ExchangePlan>
 			<ExchangePlan>ОбменУправлениеТорговлейБухгалтерия</ExchangePlan>
