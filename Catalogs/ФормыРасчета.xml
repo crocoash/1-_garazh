@@ -60,7 +60,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Catalog.ФормыРасчета.Form.ФормаЭлементаУпр</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -431,6 +431,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаОтбора</Form>
+			<Form>ФормаЭлементаУпр</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
