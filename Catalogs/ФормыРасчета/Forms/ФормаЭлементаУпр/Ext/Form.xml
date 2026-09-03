@@ -4,6 +4,11 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ФормаПоказатьВСписке" id="92">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.ShowInList</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьВСпискеРасширеннаяПодсказка" id="292"/>
+			</Button>
 			<Button name="ФормаЗаписатьИЗакрыть" id="90">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
