@@ -1960,6 +1960,7 @@
 			<DataProcessor>ЗапускРегламентныхЗаданий</DataProcessor>
 			<DataProcessor>БанковскиеВыписки</DataProcessor>
 			<InformationRegister>БП_MagentoСтатусыОтправленойНоменклатурыGarazh</InformationRegister>
+			<InformationRegister>ОчередьОрганизацийПоФормеРасчета</InformationRegister>
 			<InformationRegister>БП_АсинхроннаяПакетнаяВыгрузкаGarazh</InformationRegister>
 			<InformationRegister>БП_АсинхроннаяПакетнаяВыгрузка</InformationRegister>
 			<InformationRegister>БП_MagentoСтатусыОтправленойНоменклатуры</InformationRegister>
