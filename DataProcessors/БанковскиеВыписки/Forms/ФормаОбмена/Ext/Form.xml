@@ -347,6 +347,20 @@
 					<ContextMenu name="ДокументыКИмпортуНомерДокКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ДокументыКИмпортуНомерДокРасширеннаяПодсказка" id="68"/>
 				</InputField>
+				<InputField name="ДокументыКИмпортуТерминал" id="213">
+					<DataPath>Объект.ДокументыКИмпорту.Терминал</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</Title>
+					<Width>22</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДокументыКИмпортуТерминалКонтекстноеМеню" id="214"/>
+					<ExtendedTooltip name="ДокументыКИмпортуТерминалРасширеннаяПодсказка" id="215"/>
+				</InputField>
 				<InputField name="ДокументыКИмпортуСуммаПоступило" id="69">
 					<DataPath>Объект.ДокументыКИмпорту.СуммаПоступило</DataPath>
 					<ReadOnly>true</ReadOnly>
