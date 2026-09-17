@@ -246,6 +246,11 @@ if ($ПропуститьПроверкуШтрихкодов) {
 $логи = Join-Path $env:TEMP "1c-update-base"
 if (-not (Test-Path $логи)) { New-Item -ItemType Directory -Path $логи | Out-Null }
 
+# Логи старше недели убираем: имя у каждого запуска своё, иначе папка растёт.
+Get-ChildItem $логи -Filter "*.log" -ErrorAction SilentlyContinue |
+    Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-7) } |
+    Remove-Item -Force -ErrorAction SilentlyContinue
+
 # Start-Process склеивает массив аргументов через пробел и НИЧЕГО не экранирует:
 # имя пользователя «Антон Цветков» или путь с пробелом уедут в 1С как два
 # аргумента, и Конфигуратор ответит «Користувач ІБ не ідентифікований».
@@ -259,8 +264,12 @@ function ВКавычки($значение) {
 
 function ЗапуститьКонфигуратор($имяШага, $аргументы) {
 
-    $лог = Join-Path $логи "$имяШага.log"
-    if (Test-Path $лог) { Remove-Item $лог -Force }
+    # Имя лога уникально на запуск. С общим именем зависший от прошлого раза
+    # Конфигуратор держал файл открытым, и Remove-Item ронял весь скрипт ещё
+    # до загрузки — ловили 17.09.2026 («file is being used by another process»).
+    $метка = (Get-Date).ToString("yyyyMMdd-HHmmss")
+    $лог = Join-Path $логи "$имяШага-$метка-$PID.log"
+    if (Test-Path $лог) { Remove-Item $лог -Force -ErrorAction SilentlyContinue }
 
     # «/S app1\garazh-cp» — это два аргумента, ключ и значение: кавычить целиком
     # нельзя, 1С такой ключ не разберёт.
