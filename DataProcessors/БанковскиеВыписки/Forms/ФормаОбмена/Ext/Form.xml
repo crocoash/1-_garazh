@@ -130,11 +130,17 @@
 					<DataPath>Объект.НачалоПериода</DataPath>
 					<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">ПериодПоказаПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="КонецПериода" id="15">
 					<DataPath>Объект.КонецПериода</DataPath>
 					<ContextMenu name="КонецПериодаКонтекстноеМеню" id="16"/>
 					<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ПериодПоказаПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="Подразделение" id="18">
 					<DataPath>Объект.Подразделение</DataPath>
