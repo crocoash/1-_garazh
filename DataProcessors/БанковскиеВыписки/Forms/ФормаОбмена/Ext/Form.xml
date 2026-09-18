@@ -53,6 +53,18 @@
 				</Title>
 				<ExtendedTooltip name="ФормаСнятьОтметкиРасширеннаяПодсказка" id="8"/>
 			</Button>
+			<Button name="ФормаОчиститьЗаказы" id="216">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.Command.ОчиститьЗаказы</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Очистить заказы</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОчиститьЗаказыРасширеннаяПодсказка" id="217"/>
+			</Button>
 			<Button name="ФормаВыделитьРасхождения" id="106">
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
@@ -751,6 +763,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="ОчиститьЗаказы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить заказы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять подобранный заказ у строк без платежного документа, чтобы «Получить выписку» подобрала заново</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьЗаказы</Action>
 		</Command>
 	</Commands>
 </Form>
